@@ -35,13 +35,8 @@ export function nextReviewDay(from: string): string {
 
 export function weekendOf(date: string): { sat: string; sun: string } {
   let s = date
-  walkForwardToSaturday(s)
+  while (dayOf(s) !== 6) s = addDays(s, 1)
   return { sat: s, sun: addDays(s, 1) }
-}
-function walkForwardToSaturday(d: string): string {
-  let cur = d
-  while (dayOf(cur) !== 6) cur = addDays(cur, 1)
-  return cur
 }
 ```
 
@@ -110,7 +105,7 @@ Remove the "Due for Review" card (the entire `<Card>` block with `CardTitle "Due
 3. Group by `weekendOf(p.requeueDate)`.
 4. Sort weekends ascending by `sat`.
 5. Compute labels:
-   - First weekend whose `sat >= todayISO()` and within the current calendar week → `"This weekend"`
+   - First weekend whose Sunday >= todayISO() (i.e. the weekend that contains today or is the next one coming) → `"This weekend"`
    - Second → `"Next weekend"`
    - Subsequent → formatted `"MMM d – MMM d"` (e.g. `"Jul 18 – Jul 19"`)
    - Weekends fully in the past → `"Past — will roll forward on next open"` (briefly visible between app sessions only).
