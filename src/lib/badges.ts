@@ -18,6 +18,8 @@ export function statusClass(status: Status): string {
   }
 }
 
+export const STATUSES: Status[] = ['not-started', 'attempted', 'solved', 'confident']
+
 export const STATUS_LABEL: Record<Status, string> = {
   'not-started': 'Todo',
   'attempted': 'Tried',

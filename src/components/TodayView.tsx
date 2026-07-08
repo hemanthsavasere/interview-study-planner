@@ -5,13 +5,22 @@ import { Button } from './ui/button'
 import { Progress } from './ui/progress'
 import { Badge } from './ui/badge'
 import { ProblemCard } from './ProblemCard'
-import type { Problem } from '../types'
+import type { Problem, Status } from '../types'
 import { todayISO, addDaysISO } from '../lib/date'
 
 export function TodayView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
   const realToday = todayISO()
   const [selectedDate, setSelectedDate] = useState(realToday)
   const isToday = selectedDate === realToday
+
+  function makeHandlers(problemId: string) {
+    return {
+      onStatusChange: (s: Status) =>
+        store.updateProgress(problemId, { status: s, lastUpdated: new Date().toISOString() }),
+      onNotesChange: (n: string) =>
+        store.updateProgress(problemId, { notes: n, lastUpdated: new Date().toISOString() }),
+    }
+  }
 
   const byId = new Map(problems.map(p => [p.id, p]))
   const scheduled = Object.values(store.state.progress).filter(p => p.scheduledDate === selectedDate)
@@ -89,9 +98,7 @@ export function TodayView({ problems, store }: { problems: Problem[]; store: Ret
             </div>
           ) : reviews.map(p => {
             const pr = byId.get(p.problemId); if (!pr) return null
-            return <ProblemCard key={p.problemId} problem={pr} progress={p}
-              onStatusChange={s => store.updateProgress(p.problemId, { status: s, lastUpdated: new Date().toISOString() })}
-              onNotesChange={n => store.updateProgress(p.problemId, { notes: n, lastUpdated: new Date().toISOString() })} />
+            return <ProblemCard key={p.problemId} problem={pr} progress={p} {...makeHandlers(p.problemId)} />
           })}
         </CardContent>
       </Card>
@@ -110,9 +117,7 @@ export function TodayView({ problems, store }: { problems: Problem[]; store: Ret
             </div>
           ) : scheduled.map(p => {
             const pr = byId.get(p.problemId); if (!pr) return null
-            return <ProblemCard key={p.problemId} problem={pr} progress={p}
-              onStatusChange={s => store.updateProgress(p.problemId, { status: s, lastUpdated: new Date().toISOString() })}
-              onNotesChange={n => store.updateProgress(p.problemId, { notes: n, lastUpdated: new Date().toISOString() })} />
+            return <ProblemCard key={p.problemId} problem={pr} progress={p} {...makeHandlers(p.problemId)} />
           })}
         </CardContent>
       </Card>

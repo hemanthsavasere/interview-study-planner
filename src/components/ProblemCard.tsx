@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { ExternalLink, StickyNote } from 'lucide-react'
 import type { Problem, ProblemProgress, Status } from '../types'
 import { Button } from './ui/button'
 import { Badge } from './ui/badge'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select'
 import { Card, CardContent } from './ui/card'
-import { difficultyClass, statusClass, STATUS_LABEL } from '../lib/badges'
+import { difficultyClass, statusClass, STATUS_LABEL, STATUSES } from '../lib/badges'
 
 export function ProblemCard({ problem, progress, onStatusChange, onNotesChange }: {
   problem: Problem; progress: ProblemProgress
@@ -13,11 +13,14 @@ export function ProblemCard({ problem, progress, onStatusChange, onNotesChange }
 }) {
   const [open, setOpen] = useState(false)
   const [ring, setRing] = useState(false)
+  const ringTimerRef = useRef<ReturnType<typeof setTimeout>>()
+
+  useEffect(() => () => clearTimeout(ringTimerRef.current), [])
 
   function handleStatus(s: Status) {
     onStatusChange(s)
     setRing(true)
-    setTimeout(() => setRing(false), 1000)
+    ringTimerRef.current = setTimeout(() => setRing(false), 1000)
   }
 
   return (
@@ -32,17 +35,17 @@ export function ProblemCard({ problem, progress, onStatusChange, onNotesChange }
         </div>
         <div className="flex items-center gap-2">
           <Select value={progress.status} onValueChange={v => handleStatus(v as Status)}>
-            <SelectTrigger size="sm" className="w-36">
+            <SelectTrigger size="sm" className="w-36" aria-label="Status">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              {(['not-started', 'attempted', 'solved', 'confident'] as Status[]).map(s => (
+              {STATUSES.map(s => (
                 <SelectItem key={s} value={s}>{STATUS_LABEL[s]}</SelectItem>
               ))}
             </SelectContent>
           </Select>
           <Button variant="ghost" size="icon-sm" aria-label="Open problem"
-            onClick={() => window.open(problem.url, '_blank')}>
+            onClick={() => window.open(problem.url, '_blank', 'noopener,noreferrer')}>
             <ExternalLink />
           </Button>
           <Button variant="ghost" size="sm" onClick={() => setOpen(o => !o)}>
