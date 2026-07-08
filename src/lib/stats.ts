@@ -10,7 +10,7 @@ export function flattenProblems(topics: Record<string, Record<string, Problem[]>
   return all
 }
 
-export function sectionStats(problems: Problem[], progress: Record<string, ProblemProgress>) {
+export function sectionStats(problems: Problem[], progress: Record<string, ProblemProgress>): { solved: number; confident: number; total: number; masteryPct: number } {
   let solved = 0, confident = 0
   for (const p of problems) {
     const s = progress[p.id]?.status
@@ -21,7 +21,7 @@ export function sectionStats(problems: Problem[], progress: Record<string, Probl
   return { solved, confident, total, masteryPct: total ? Math.round((confident / total) * 100) : 0 }
 }
 
-export function nodeStats(problems: Problem[], progress: Record<string, ProblemProgress>) {
+export function nodeStats(problems: Problem[], progress: Record<string, ProblemProgress>): { solved: number; total: number } {
   let total = 0, solved = 0
   for (const p of problems) {
     total++
