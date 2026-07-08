@@ -20,6 +20,7 @@ export function ProblemCard({ problem, progress, onStatusChange, onNotesChange }
   function handleStatus(s: Status) {
     onStatusChange(s)
     setRing(true)
+    clearTimeout(ringTimerRef.current)
     ringTimerRef.current = setTimeout(() => setRing(false), 1000)
   }
 
