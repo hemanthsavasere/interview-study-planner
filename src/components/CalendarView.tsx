@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react'
 import { ChevronLeft, ChevronRight, Check, ExternalLink } from 'lucide-react'
-import type { Problem, ProblemProgress } from '../types'
+import type { Difficulty, Problem, ProblemProgress } from '../types'
 import { Button } from './ui/button'
 import { Badge } from './ui/badge'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog'
 import { Card, CardContent } from './ui/card'
-import { difficultyClass, STATUS_LABEL } from '../lib/badges'
+import { difficultyClass, difficultyBgClass, STATUS_LABEL } from '../lib/badges'
 import { todayISO } from '../lib/date'
 
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
@@ -61,6 +61,13 @@ export function CalendarView({ problems, store }: {
     requeue: requeueMap[selectedDate] ?? [],
   } : null
 
+  const dialogDateStr = selectedDate ? selectedDate + 'T12:00:00' : ''
+
+  function renderProblem(pp: ProblemProgress) {
+    const pr = byId.get(pp.problemId); if (!pr) return null
+    return <DayProblem key={pp.problemId} problem={pr} progress={pp} />
+  }
+
   const monthName = new Date(viewMonth.year, viewMonth.month).toLocaleString('default', { month: 'long', year: 'numeric' })
 
   return (
@@ -87,7 +94,7 @@ export function CalendarView({ problems, store }: {
           const scheduled = scheduledMap[key] ?? []
           const requeue = requeueMap[key] ?? []
           const allSolved = scheduled.length > 0 && scheduled.every(p => p.status === 'solved' || p.status === 'confident')
-          const diffs = [...new Set(scheduled.map(p => byId.get(p.problemId)?.difficulty).filter(Boolean))] as string[]
+          const diffs = [...new Set(scheduled.map(p => byId.get(p.problemId)?.difficulty).filter((d): d is Difficulty => d != null))]
           const weekday = i % 7
           const isWeekend = weekday === 0 || weekday === 6
           const isToday = key === realToday
@@ -112,7 +119,7 @@ export function CalendarView({ problems, store }: {
               )}
               {diffs.length > 0 && (
                 <div className="flex gap-0.5 mt-0.5">
-                  {diffs.map(d => <span key={d} className={`w-1.5 h-1.5 rounded-full ${difficultyClass(d as Problem['difficulty']).split(' ')[0]}`} />)}
+                  {diffs.map(d => <span key={d} className={`w-1.5 h-1.5 rounded-full ${difficultyBgClass(d)}`} />)}
                 </div>
               )}
               {allSolved && <Check className="size-3 text-primary mt-0.5" />}
@@ -125,7 +132,7 @@ export function CalendarView({ problems, store }: {
       <Dialog open={!!selectedDate} onOpenChange={o => { if (!o) setSelectedDate(null) }}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>{selectedDate ? new Date(selectedDate + 'T12:00:00').toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : ''}</DialogTitle>
+            <DialogTitle>{selectedDate ? new Date(dialogDateStr).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : ''}</DialogTitle>
           </DialogHeader>
           <div className="space-y-3 max-h-[60vh] overflow-auto">
             {selectedData?.scheduled.length === 0 && selectedData?.requeue.length === 0 && (
@@ -134,13 +141,13 @@ export function CalendarView({ problems, store }: {
             {selectedData && selectedData.scheduled.length > 0 && (
               <div>
                 <h4 className="text-sm font-semibold mb-1">Scheduled <Badge variant="secondary" className="ml-1">{selectedData.scheduled.length}</Badge></h4>
-                {selectedData.scheduled.map(p => { const pr = byId.get(p.problemId); if (!pr) return null; return <DayProblem key={p.problemId} problem={pr} progress={p} /> })}
+                {selectedData.scheduled.map(renderProblem)}
               </div>
             )}
             {selectedData && selectedData.requeue.length > 0 && (
               <div>
                 <h4 className="text-sm font-semibold mb-1">Reviews <Badge variant="secondary" className="ml-1">{selectedData.requeue.length}</Badge></h4>
-                {selectedData.requeue.map(p => { const pr = byId.get(p.problemId); if (!pr) return null; return <DayProblem key={p.problemId} problem={pr} progress={p} /> })}
+                {selectedData.requeue.map(renderProblem)}
               </div>
             )}
           </div>

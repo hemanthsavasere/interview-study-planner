@@ -18,6 +18,15 @@ export function statusClass(status: Status): string {
   }
 }
 
+export function difficultyBgClass(diff: Difficulty): string {
+  switch (diff) {
+    case 'Easy': return 'bg-[var(--diff-easy-bg)]'
+    case 'Medium': return 'bg-[var(--diff-medium-bg)]'
+    case 'Hard': return 'bg-[var(--diff-hard-bg)]'
+    case 'Fundamental': return 'bg-[var(--diff-fundamental-bg)]'
+  }
+}
+
 export const STATUSES: Status[] = ['not-started', 'attempted', 'solved', 'confident']
 
 export const STATUS_LABEL: Record<Status, string> = {
