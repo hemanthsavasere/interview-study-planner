@@ -3,7 +3,7 @@ import type { AppState, Problem, ProblemProgress, ScheduleConfig } from '../type
 import { loadState, saveState, freshState } from '../lib/storage'
 import { processRequeue } from '../lib/requeue'
 
-function todayISO() { return new Date().toISOString().slice(0, 10) }
+import { todayISO } from '../lib/date'
 
 export function useStore(problems: Problem[]) {
   const [state, setState] = useState<AppState>(() => loadState())

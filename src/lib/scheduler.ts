@@ -1,4 +1,5 @@
 import type { Problem, ScheduleConfig, ProblemProgress, Difficulty } from '../types'
+import { localISODate } from './date'
 
 export const DIFFICULTY_MINUTES: Record<Difficulty, number> = {
   Fundamental: 24, Easy: 30, Medium: 48, Hard: 69,
@@ -13,7 +14,7 @@ export interface ScheduleResult {
 }
 
 function isoDate(d: Date): string {
-  return d.toISOString().slice(0, 10)
+  return localISODate(d)
 }
 function addDays(d: Date, n: number): Date {
   const r = new Date(d); r.setDate(r.getDate() + n); return r

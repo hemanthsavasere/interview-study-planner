@@ -2,7 +2,7 @@ import { Progress } from './ui/progress'
 import { ProblemCard } from './ProblemCard'
 import type { Problem } from '../types'
 
-function todayISO() { return new Date().toISOString().slice(0, 10) }
+import { todayISO } from '../lib/date'
 
 export function TodayView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
   const today = todayISO()
