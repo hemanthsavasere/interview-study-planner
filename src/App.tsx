@@ -6,6 +6,7 @@ import { Sidebar } from './components/Sidebar'
 import { TodayView } from './components/TodayView'
 import { CalendarView } from './components/CalendarView'
 import { SettingsView } from './components/SettingsView'
+import { TopicsView } from './components/TopicsView'
 const problems = parseProblems(csv)
 
 export default function App() {
@@ -19,8 +20,9 @@ export default function App() {
       <main className="flex-1 overflow-auto p-6">
         {tab === 'today' ? <TodayView problems={problems} store={store} />
          : tab === 'calendar' ? <CalendarView problems={problems} store={store} />
+         : tab === 'topics' ? <TopicsView problems={problems} store={store} />
          : tab === 'settings' ? <SettingsView problems={problems} store={store} />
-         : <p className="text-muted-foreground">Coming soon</p>}
+          : <p className="text-muted-foreground">Coming soon</p>}
       </main>
     </div>
   )
