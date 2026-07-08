@@ -1,0 +1,66 @@
+import { useState } from 'react'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
+import { Label } from './ui/label'
+import { Switch } from './ui/switch'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from './ui/dialog'
+import { toast } from 'sonner'
+import { generateSchedule } from '../lib/scheduler'
+import type { Problem } from '../types'
+
+export function SettingsView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
+  const [deadline, setDeadline] = useState(store.state.config.deadline)
+  const [hours, setHours] = useState(String(store.state.config.hoursPerDay))
+  const [weekdays, setWeekdays] = useState(store.state.config.weekdaysOnly)
+  const [err, setErr] = useState('')
+  const [warn, setWarn] = useState<string[] | null>(null)
+
+  function run(regen: boolean) {
+    setErr('')
+    try {
+      const cfg = { deadline, hoursPerDay: Number(hours), weekdaysOnly: weekdays }
+      const { assignments, warnings } = generateSchedule(problems, cfg, regen ? store.state.progress : undefined)
+      store.setConfig(cfg)
+      store.applyAssignments(assignments, new Date().toISOString())
+      if (warnings.length) setWarn(warnings)
+      else toast.success(regen ? 'Schedule regenerated' : 'Schedule generated')
+    } catch (e) {
+      setErr(String((e as Error).message))
+    }
+  }
+
+  return (
+    <div className="max-w-md space-y-4">
+      <h2 className="text-xl font-bold">Settings</h2>
+      <div>
+        <Label htmlFor="deadline">Deadline</Label>
+        <Input id="deadline" type="date" value={deadline} onChange={e => setDeadline(e.target.value)} />
+      </div>
+      <div>
+        <Label htmlFor="hours">Hours per day</Label>
+        <Input id="hours" type="number" min={0.5} step={0.5} value={hours} onChange={e => setHours(e.target.value)} />
+      </div>
+      <div className="flex items-center gap-2">
+        <Switch checked={weekdays} onCheckedChange={setWeekdays} />
+        <Label>Weekdays only (for requeue)</Label>
+      </div>
+      {err && <p className="text-sm text-red-500">{err}</p>}
+      <div className="flex gap-2">
+        <Button onClick={() => run(false)}>Generate Schedule</Button>
+        <Button variant="outline" onClick={() => run(true)}>Regenerate (unsolved)</Button>
+      </div>
+      <Button variant="outline" disabled>Sync to Files (coming soon)</Button>
+      <Button variant="destructive" onClick={() => { if (confirm('Reset all progress?')) { store.resetAll(); toast.success('Reset') } }}>
+        Reset All Progress
+      </Button>
+
+      <Dialog open={!!warn} onOpenChange={o => !o && setWarn(null)}>
+        <DialogContent>
+          <DialogHeader><DialogTitle>Schedule warnings</DialogTitle></DialogHeader>
+          <ul className="text-sm list-disc pl-4">{warn?.map((w, i) => <li key={i}>{w}</li>)}</ul>
+          <DialogFooter><Button onClick={() => setWarn(null)}>OK</Button></DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </div>
+  )
+}

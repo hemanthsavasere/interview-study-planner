@@ -4,6 +4,7 @@ import { parseProblems } from './lib/parseProblems'
 import csv from './data/problems.csv?raw'
 import { Sidebar } from './components/Sidebar'
 import { TodayView } from './components/TodayView'
+import { SettingsView } from './components/SettingsView'
 const problems = parseProblems(csv)
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
       <Sidebar active={tab} onTab={setTab} solved={solved} total={problems.length} />
       <main className="flex-1 overflow-auto p-6">
         {tab === 'today' ? <TodayView problems={problems} store={store} />
+         : tab === 'settings' ? <SettingsView problems={problems} store={store} />
          : <p className="text-muted-foreground">Coming soon</p>}
       </main>
     </div>
