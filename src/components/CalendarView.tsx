@@ -73,8 +73,8 @@ export function CalendarView({ problems, store }: {
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">{monthName}</h2>
         <div className="flex gap-2">
-          <Button variant="outline" size="sm" onClick={prev}>Prev</Button>
-          <Button variant="outline" size="sm" onClick={next}>Next</Button>
+          <Button variant="outline" size="sm" onClick={prev} aria-label="Previous month">Prev</Button>
+          <Button variant="outline" size="sm" onClick={next} aria-label="Next month">Next</Button>
         </div>
       </div>
 
@@ -89,7 +89,9 @@ export function CalendarView({ problems, store }: {
           const requeue = requeueMap[key] ?? []
           const allSolved = scheduled.length > 0 && scheduled.every(p => p.status === 'solved' || p.status === 'confident')
           const diffs = [...new Set(scheduled.map(p => byId.get(p.problemId)?.difficulty).filter(Boolean))]
-          const hasRequeue = requeue.length > 0
+          const weekday = i % 7
+          const isWeekend = weekday === 0 || weekday === 6
+          const hasRequeue = requeue.length > 0 && isWeekend
 
           return (
             <button
@@ -98,6 +100,9 @@ export function CalendarView({ problems, store }: {
               className={`aspect-square border rounded-lg p-1 flex flex-col items-center justify-start text-sm hover:bg-accent transition-colors ${allSolved ? 'border-green-400 bg-green-50 dark:bg-green-950' : ''}`}
             >
               <span className="text-xs">{day}</span>
+              {scheduled.length > 0 && (
+                <span className="text-[10px] font-medium text-muted-foreground mt-0.5">{scheduled.length}</span>
+              )}
               {diffs.length > 0 && (
                 <div className="flex gap-0.5 mt-0.5">
                   {diffs.map(d => (
