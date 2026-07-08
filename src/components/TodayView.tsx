@@ -24,7 +24,7 @@ export function TodayView({ problems, store }: { problems: Problem[]; store: Ret
 
   const byId = new Map(problems.map(p => [p.id, p]))
   const scheduled = Object.values(store.state.progress).filter(p => p.scheduledDate === selectedDate)
-  const reviews = Object.values(store.state.progress).filter(p => p.requeueDate === selectedDate)
+
   const solved = Object.values(store.state.progress).filter(p => p.status === 'solved' || p.status === 'confident').length
   const pct = problems.length ? (solved / problems.length) * 100 : 0
 
@@ -50,7 +50,7 @@ export function TodayView({ problems, store }: { problems: Problem[]; store: Ret
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
               <CalendarDays className="size-4 text-primary" /> Due today
             </div>
-            <div className="text-3xl font-semibold tabular-nums">{scheduled.length + reviews.length}</div>
+            <div className="text-3xl font-semibold tabular-nums">{scheduled.length}</div>
             <div className="text-xs text-muted-foreground">{selectedDate}</div>
           </CardContent>
         </Card>
@@ -83,26 +83,6 @@ export function TodayView({ problems, store }: { problems: Problem[]; store: Ret
           <Button variant="ghost" size="sm" onClick={() => setSelectedDate(realToday)}>Today</Button>
         )}
       </div>
-
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-base">Due for Review
-            <Badge variant="secondary" className="ml-2">{reviews.length}</Badge>
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-3">
-          {reviews.length === 0 ? (
-            <div className="flex flex-col items-center py-6 text-muted-foreground">
-              <CheckCircle2 className="size-8 mb-2 text-primary/60" />
-              <p className="text-sm">No reviews due — nice!</p>
-            </div>
-          ) : reviews.map(p => {
-            const pr = byId.get(p.problemId); if (!pr) return null
-            return <ProblemCard key={p.problemId} problem={pr} progress={p} {...makeHandlers(p.problemId)} />
-          })}
-        </CardContent>
-      </Card>
-
       <Card>
         <CardHeader>
           <CardTitle className="text-base">Scheduled
