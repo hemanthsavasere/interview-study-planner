@@ -17,15 +17,19 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
 
   function run(regen: boolean) {
     setErr('')
+    setWarn(null)
     try {
-      const cfg = { deadline, hoursPerDay: Number(hours), weekdaysOnly: weekdays }
+      const h = Number(hours)
+      if (!isFinite(h) || h < 0.5) { setErr('Hours must be at least 0.5'); return }
+      if (!deadline) { setErr('Please set a deadline'); return }
+      const cfg = { deadline, hoursPerDay: h, weekdaysOnly: weekdays }
       const { assignments, warnings } = generateSchedule(problems, cfg, regen ? store.state.progress : undefined)
       store.setConfig(cfg)
       store.applyAssignments(assignments, new Date().toISOString())
       if (warnings.length) setWarn(warnings)
       else toast.success(regen ? 'Schedule regenerated' : 'Schedule generated')
     } catch (e) {
-      setErr(String((e as Error).message))
+      setErr(e instanceof Error ? e.message : String(e))
     }
   }
 
@@ -41,10 +45,10 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
         <Input id="hours" type="number" min={0.5} step={0.5} value={hours} onChange={e => setHours(e.target.value)} />
       </div>
       <div className="flex items-center gap-2">
-        <Switch checked={weekdays} onCheckedChange={setWeekdays} />
-        <Label>Weekdays only (for requeue)</Label>
+        <Switch id="weekdays" checked={weekdays} onCheckedChange={setWeekdays} />
+        <Label htmlFor="weekdays">Weekdays only (for requeue)</Label>
       </div>
-      {err && <p className="text-sm text-red-500">{err}</p>}
+      {err && <p role="alert" className="text-sm text-red-500">{err}</p>}
       <div className="flex gap-2">
         <Button onClick={() => run(false)}>Generate Schedule</Button>
         <Button variant="outline" onClick={() => run(true)}>Regenerate (unsolved)</Button>
