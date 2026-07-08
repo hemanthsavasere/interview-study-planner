@@ -93,12 +93,14 @@ function LearningPathNode({ name, topics, progress }: {
             </CardTitle>
           </CardHeader>
         </CollapsibleTrigger>
-        <div className="px-6 pb-2"><Progress value={pct} className="h-2" /></div>
-        <CardContent className="space-y-1">
-          {Object.entries(topics).map(([topic, sections]) => (
-            <TopicNode key={topic} name={topic} sections={sections} progress={progress} />
-          ))}
-        </CardContent>
+        <CollapsibleContent>
+          <div className="px-6 pb-2"><Progress value={pct} className="h-2" /></div>
+          <CardContent className="space-y-1">
+            {Object.entries(topics).map(([topic, sections]) => (
+              <TopicNode key={topic} name={topic} sections={sections} progress={progress} />
+            ))}
+          </CardContent>
+        </CollapsibleContent>
       </Collapsible>
     </Card>
   )
