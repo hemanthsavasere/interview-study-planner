@@ -8,3 +8,9 @@ export function localISODate(d: Date): string {
   const day = String(d.getDate()).padStart(2, '0')
   return `${y}-${m}-${day}`
 }
+
+export function addDaysISO(date: string, n: number): string {
+  const d = new Date(date + 'T12:00:00')
+  d.setDate(d.getDate() + n)
+  return localISODate(d)
+}
