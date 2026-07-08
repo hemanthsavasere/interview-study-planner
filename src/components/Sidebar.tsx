@@ -1,13 +1,14 @@
 import type { ComponentType } from 'react'
-import { CalendarDays, CalendarRange, Layers, StickyNote, Settings, Sun, Moon } from 'lucide-react'
+import { CalendarDays, CalendarRange, Layers, StickyNote, Settings, Sun, Moon, RotateCw } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Progress } from './ui/progress'
 import { cn } from '../lib/utils'
 
-export type Tab = 'today' | 'calendar' | 'topics' | 'notes' | 'settings'
+export type Tab = 'today' | 'reviews' | 'calendar' | 'topics' | 'notes' | 'settings'
 
 const TABS: { id: Tab; label: string; icon: ComponentType<{ className?: string }> }[] = [
   { id: 'today', label: 'Today', icon: CalendarDays },
+  { id: 'reviews', label: 'Reviews', icon: RotateCw },
   { id: 'calendar', label: 'Calendar', icon: CalendarRange },
   { id: 'topics', label: 'Topics', icon: Layers },
   { id: 'notes', label: 'Notes', icon: StickyNote },
