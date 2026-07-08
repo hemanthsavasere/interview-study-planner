@@ -3,10 +3,12 @@ import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { Label } from './ui/label'
 import { Switch } from './ui/switch'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from './ui/dialog'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription } from './ui/dialog'
 import { toast } from 'sonner'
 import { generateSchedule } from '../lib/scheduler'
+import { syncToFiles, loadFromFiles } from '../lib/sync'
 import type { Problem } from '../types'
+import type { AppState } from '../types'
 
 export function SettingsView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
   const [deadline, setDeadline] = useState(store.state.config.deadline)
@@ -14,6 +16,7 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
   const [weekdays, setWeekdays] = useState(store.state.config.weekdaysOnly)
   const [err, setErr] = useState('')
   const [warn, setWarn] = useState<string[] | null>(null)
+  const [importedData, setImportedData] = useState<AppState | null>(null)
 
   function run(regen: boolean) {
     setErr('')
@@ -29,8 +32,29 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
       if (warnings.length) setWarn(warnings)
       else toast.success(regen ? 'Schedule regenerated' : 'Schedule generated')
     } catch (e) {
-      setErr(e instanceof Error ? e.message : String(e))
+      const msg = e instanceof Error ? e.message : String(e)
+      setErr(msg)
+      toast.error(msg)
     }
+  }
+
+  async function handleSync() {
+    const res = await syncToFiles(store.state, problems)
+    if (res.ok) toast.success('Synced to files')
+    else toast.error(res.error ?? 'Sync failed')
+  }
+
+  async function handleImport() {
+    const data = await loadFromFiles()
+    if (!data) { toast.error('No progress file found'); return }
+    setImportedData(data)
+  }
+
+  function confirmImport() {
+    if (!importedData) return
+    store.loadFromImport(importedData)
+    setImportedData(null)
+    toast.success('Progress imported from files')
   }
 
   return (
@@ -53,10 +77,26 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
         <Button onClick={() => run(false)}>Generate Schedule</Button>
         <Button variant="outline" onClick={() => run(true)}>Regenerate (unsolved)</Button>
       </div>
-      <Button variant="outline" disabled>Sync to Files (coming soon)</Button>
+      <div className="flex gap-2">
+        <Button variant="outline" onClick={handleSync}>Sync to Files</Button>
+        <Button variant="outline" onClick={handleImport}>Import from Files</Button>
+      </div>
       <Button variant="destructive" onClick={() => { if (confirm('Reset all progress?')) { store.resetAll(); toast.success('Reset') } }}>
         Reset All Progress
       </Button>
+
+      <Dialog open={!!importedData} onOpenChange={o => !o && setImportedData(null)}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Import progress</DialogTitle>
+            <DialogDescription>Import progress from files? This will overwrite your current progress.</DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setImportedData(null)}>Cancel</Button>
+            <Button onClick={confirmImport}>Import</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       <Dialog open={!!warn} onOpenChange={o => !o && setWarn(null)}>
         <DialogContent>

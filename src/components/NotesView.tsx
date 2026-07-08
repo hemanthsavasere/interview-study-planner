@@ -4,7 +4,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import type { Problem, Difficulty, Status } from '../types'
-import type { ProblemProgress } from '../types'
 
 const STATUS_LABEL: Record<string, string> = {
   'not-started': 'Todo',

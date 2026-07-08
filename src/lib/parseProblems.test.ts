@@ -8,7 +8,7 @@ Algorithms,DP,Basic,Three Sum,Medium,https://x/w`
 
 describe('parseProblems', () => {
   it('maps columns to Problem fields', () => {
-    const p = parseProblems(CSV)
+    const p = parseProblems(CSV).problems
     expect(p).toHaveLength(3)
     expect(p[0]).toMatchObject({
       learningPath: 'Data Structures', topic: 'Array',
@@ -17,13 +17,15 @@ describe('parseProblems', () => {
     })
   })
   it('slugifies id and dedupes collisions', () => {
-    const p = parseProblems(CSV)
+    const p = parseProblems(CSV).problems
     expect(p[0].id).toBe('flip-characters')
     expect(p[1].id).toBe('flip-characters-2')
   })
   it('skips rows with unknown difficulty', () => {
     const bad = CSV + '\nData Structures,X,Y,Z,Banana,https://x'
-    expect(parseProblems(bad)).toHaveLength(3)
+    const res = parseProblems(bad)
+    expect(res.problems).toHaveLength(3)
+    expect(res.skipped).toBe(1)
   })
   it('slugify trims and kebab-cases', () => {
     expect(slugify('  Three Sum! ')).toBe('three-sum')

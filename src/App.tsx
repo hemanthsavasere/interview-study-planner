@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { toast } from 'sonner'
 import { useStore } from './hooks/useStore'
 import { parseProblems } from './lib/parseProblems'
 import csv from './data/problems.csv?raw'
@@ -8,7 +9,8 @@ import { CalendarView } from './components/CalendarView'
 import { SettingsView } from './components/SettingsView'
 import { TopicsView } from './components/TopicsView'
 import { NotesView } from './components/NotesView'
-const problems = parseProblems(csv)
+const { problems, skipped } = parseProblems(csv)
+if (skipped > 0) toast.warning(`${skipped} CSV rows skipped`)
 
 export default function App() {
   const store = useStore(problems)

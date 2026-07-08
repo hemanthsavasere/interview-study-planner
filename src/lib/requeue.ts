@@ -12,7 +12,6 @@ export function processRequeue(
   config: ScheduleConfig,
   today: string,
 ): Record<string, ProblemProgress> {
-  const deadlinePassed = today > config.deadline
   const hasUnsolved = Object.values(progress).some(
     p => p.status === 'not-started' || p.status === 'attempted',
   ) || problems.some(p => !progress[p.id])

@@ -1,32 +1,26 @@
-# React + TypeScript + Vite
+# Interview Study Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Tracks interview prep progress across 475 problems with auto-scheduling, spaced repetition, and local file sync.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Setup
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Scripts
+- `npm run dev` — Vite dev server (filesystem plugin active)
+- `npm run test` — Vitest unit tests
+- `npm run lint` — ESLint
+- `npm run typecheck` — `tsc --noEmit`
+- `npm run build` — production build (no filesystem plugin)
+
+## Git sync workflow
+1. Work in the app; state persists to localStorage.
+2. Settings → "Sync to Files" writes `progress.json` and `notes/` to disk.
+3. `git add . && git commit -m "update progress" && git push`
+
+## Known limitations
+- Desktop-first (no mobile layout).
+- Single-user, no auth, no backend.
+- Filesystem plugin is dev-only.
