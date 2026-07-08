@@ -6,6 +6,19 @@ function addDays(iso: string, n: number): string {
 }
 function dayOf(iso: string): number { return new Date(iso + 'T12:00:00').getDay() }
 
+export function nextReviewDay(from: string): string {
+  let d = addDays(from, 1)
+  while (dayOf(d) !== 6 && dayOf(d) !== 0) d = addDays(d, 1)
+  return d
+}
+
+export function weekendOf(date: string): { sat: string; sun: string } {
+  const wd = dayOf(date)
+  const offset = wd === 0 ? -1 : 6 - wd
+  const sat = addDays(date, offset)
+  return { sat, sun: addDays(sat, 1) }
+}
+
 export function processRequeue(
   progress: Record<string, ProblemProgress>,
   problems: Problem[],
@@ -24,11 +37,11 @@ export function processRequeue(
     if (!due) continue
     let date: string
     if (useDaily) {
-      date = addDays(today, 1)
+      date = nextReviewDay(today)
     } else {
-      date = addDays(p.lastUpdated.slice(0, 10), 7)
+      date = p.lastUpdated.slice(0, 10)
       while (dayOf(date) !== 6 && dayOf(date) !== 0) date = addDays(date, 1)
-      if (date <= today) date = addDays(today, 1)
+      if (date <= today) date = nextReviewDay(today)
     }
     out[p.problemId] = { ...p, requeueDate: date, requeueCount: p.requeueCount + 1 }
   }

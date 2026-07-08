@@ -1,26 +1,13 @@
 import { useState } from 'react'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Folder, FolderOpen } from 'lucide-react'
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from './ui/collapsible'
+import { Card, CardHeader, CardTitle, CardContent } from './ui/card'
+import { Badge } from './ui/badge'
+import { Progress } from './ui/progress'
 import { cn } from '../lib/utils'
+import { difficultyClass, statusClass, STATUS_LABEL } from '../lib/badges'
+import { flattenProblems, sectionStats, nodeStats } from '../lib/stats'
 import type { Problem, ProblemProgress } from '../types'
-
-const DIFF_COLOR: Record<string, string> = {
-  Easy: 'bg-green-500', Medium: 'bg-amber-500', Hard: 'bg-red-500', Fundamental: 'bg-slate-500',
-}
-
-const STATUS_LABEL: Record<string, string> = {
-  'not-started': 'Todo',
-  'attempted': 'Tried',
-  'solved': 'Solved',
-  'confident': 'Mastered',
-}
-
-const STATUS_COLOR: Record<string, string> = {
-  'not-started': 'bg-gray-300 text-gray-700',
-  'attempted': 'bg-yellow-300 text-yellow-800',
-  'solved': 'bg-blue-500 text-white',
-  'confident': 'bg-green-600 text-white',
-}
 
 function masteryColor(pct: number) {
   if (pct <= 40) return 'text-red-500'
@@ -28,67 +15,31 @@ function masteryColor(pct: number) {
   return 'text-green-500'
 }
 
-function sectionStats(problems: Problem[], progress: Record<string, ProblemProgress>) {
-  let solved = 0, confident = 0
-  for (const p of problems) {
-    const s = progress[p.id]?.status
-    if (s === 'solved' || s === 'confident') solved++
-    if (s === 'confident') confident++
-  }
-  const total = problems.length
-  return { solved, confident, total, masteryPct: total ? Math.round((confident / total) * 100) : 0 }
-}
-
-function nodeStats(problems: Problem[], progress: Record<string, ProblemProgress>) {
-  let total = 0, solved = 0
-  for (const p of problems) {
-    total++
-    const s = progress[p.id]?.status
-    if (s === 'solved' || s === 'confident') solved++
-  }
-  return { solved, total }
-}
-
-function flattenProblems(topics: Record<string, Record<string, Problem[]>>) {
-  const all: Problem[] = []
-  for (const sections of Object.values(topics)) {
-    for (const probs of Object.values(sections)) {
-      for (const p of probs) all.push(p)
-    }
-  }
-  return all
-}
-
 function SectionNode({ name, problems, progress, defaultOpen }: {
   name: string; problems: Problem[]; progress: Record<string, ProblemProgress>; defaultOpen?: boolean
 }) {
   const [open, setOpen] = useState(defaultOpen ?? false)
   const { solved, confident, total, masteryPct } = sectionStats(problems, progress)
+  const pct = total ? (solved / total) * 100 : 0
 
   return (
     <Collapsible open={open} onOpenChange={setOpen}>
-      <CollapsibleTrigger className="flex items-center gap-1 py-1 px-2 rounded hover:bg-accent w-full text-left text-sm">
-        <ChevronRight className={cn("size-4 shrink-0 transition-transform", open && "rotate-90")} />
+      <CollapsibleTrigger className="flex items-center gap-1 py-1.5 px-2 rounded-md hover:bg-accent w-full text-left text-sm">
+        <ChevronRight className={cn('size-4 shrink-0 transition-transform', open && 'rotate-90')} />
         <span className="font-medium truncate">{name}</span>
         <span className="ml-auto shrink-0 text-xs text-muted-foreground">{solved}/{total} solved</span>
-        <span className={cn("ml-2 shrink-0 text-xs font-medium", masteryColor(masteryPct))}>
-          {confident}/{total} mastered
-        </span>
+        <span className={cn('ml-2 shrink-0 text-xs font-medium', masteryColor(masteryPct))}>{confident}/{total} mastered</span>
       </CollapsibleTrigger>
-      <CollapsibleContent className="ml-4 border-l pl-3 space-y-0.5">
+      <div className="px-2 pb-1"><Progress value={pct} className="h-1.5" /></div>
+      <CollapsibleContent className="ml-9 border-l pl-2 space-y-0.5">
         {problems.map(p => (
-          <button
-            key={p.id}
-            onClick={() => window.open(p.url, '_blank')}
-            className="flex items-center gap-2 w-full text-left py-1 px-2 rounded hover:bg-accent text-sm"
-          >
+          <button key={p.id} onClick={() => window.open(p.url, '_blank', 'noopener,noreferrer')}
+            className="flex items-center gap-2 w-full text-left py-1.5 px-2 rounded-md hover:bg-accent text-sm">
             <span className="truncate flex-1">{p.name}</span>
-            <span className={cn("text-xs px-1.5 py-0.5 rounded text-white shrink-0", DIFF_COLOR[p.difficulty])}>
-              {p.difficulty}
-            </span>
-            <span className={cn("text-xs px-1.5 py-0.5 rounded shrink-0", STATUS_COLOR[progress[p.id]?.status ?? 'not-started'])}>
+            <Badge className={cn('shrink-0', difficultyClass(p.difficulty))}>{p.difficulty}</Badge>
+            <Badge className={cn('shrink-0', statusClass(progress[p.id]?.status ?? 'not-started'))}>
               {STATUS_LABEL[progress[p.id]?.status ?? 'not-started']}
-            </span>
+            </Badge>
           </button>
         ))}
       </CollapsibleContent>
@@ -102,15 +53,18 @@ function TopicNode({ name, sections, progress }: {
   const [open, setOpen] = useState(false)
   const all = flattenProblems({ __: sections })
   const { solved, total } = nodeStats(all, progress)
+  const pct = total ? (solved / total) * 100 : 0
 
   return (
-    <Collapsible open={open} onOpenChange={setOpen}>
-      <CollapsibleTrigger className="flex items-center gap-1 py-2 px-3 rounded hover:bg-accent w-full text-left font-semibold">
-        <ChevronRight className={cn("size-4 shrink-0 transition-transform", open && "rotate-90")} />
+    <Collapsible open={open} onOpenChange={setOpen} className="ml-6 border-l-2 border-border pl-2">
+      <CollapsibleTrigger className="flex items-center gap-1 py-2 px-2 rounded-md hover:bg-accent w-full text-left text-sm font-medium">
+        {open ? <FolderOpen className="size-4 text-muted-foreground" /> : <Folder className="size-4 text-muted-foreground" />}
+        <ChevronRight className={cn('size-4 shrink-0 transition-transform', open && 'rotate-90')} />
         <span>{name}</span>
-        <span className="ml-auto shrink-0 text-xs text-muted-foreground font-normal">{solved}/{total} solved</span>
+        <span className="ml-auto shrink-0 text-xs text-muted-foreground">{solved}/{total} solved</span>
       </CollapsibleTrigger>
-      <CollapsibleContent className="ml-6 space-y-1">
+      <div className="px-2 pb-1"><Progress value={pct} className="h-1.5" /></div>
+      <CollapsibleContent className="space-y-0.5">
         {Object.entries(sections).map(([section, probs]) => (
           <SectionNode key={section} name={section} problems={probs} progress={progress} />
         ))}
@@ -125,20 +79,30 @@ function LearningPathNode({ name, topics, progress }: {
   const [open, setOpen] = useState(true)
   const all = flattenProblems(topics)
   const { solved, total } = nodeStats(all, progress)
+  const pct = total ? (solved / total) * 100 : 0
 
   return (
-    <Collapsible open={open} onOpenChange={setOpen} className="border rounded-lg">
-      <CollapsibleTrigger className="flex items-center gap-2 py-3 px-4 rounded-lg hover:bg-accent w-full text-left font-bold text-base">
-        <ChevronRight className={cn("size-5 shrink-0 transition-transform", open && "rotate-90")} />
-        <span>{name}</span>
-        <span className="ml-auto shrink-0 text-xs text-muted-foreground font-normal">{solved}/{total} solved</span>
-      </CollapsibleTrigger>
-      <CollapsibleContent className="px-4 pb-3 space-y-1">
-        {Object.entries(topics).map(([topic, sections]) => (
-          <TopicNode key={topic} name={topic} sections={sections} progress={progress} />
-        ))}
-      </CollapsibleContent>
-    </Collapsible>
+    <Card>
+      <Collapsible open={open} onOpenChange={setOpen}>
+        <CollapsibleTrigger className="w-full">
+          <CardHeader>
+            <CardTitle className="text-base flex items-center gap-2">
+              <ChevronRight className={cn('size-4 transition-transform', open && 'rotate-90')} />
+              {name}
+              <span className="ml-auto text-xs font-normal text-muted-foreground">{solved}/{total} solved</span>
+            </CardTitle>
+          </CardHeader>
+        </CollapsibleTrigger>
+        <CollapsibleContent>
+          <div className="px-6 pb-2"><Progress value={pct} className="h-2" /></div>
+          <CardContent className="space-y-1">
+            {Object.entries(topics).map(([topic, sections]) => (
+              <TopicNode key={topic} name={topic} sections={sections} progress={progress} />
+            ))}
+          </CardContent>
+        </CollapsibleContent>
+      </Collapsible>
+    </Card>
   )
 }
 
@@ -155,8 +119,8 @@ export function TopicsView({ problems, store }: {
   })
 
   return (
-    <div className="space-y-3">
-      <h2 className="text-xl font-bold">Topics</h2>
+    <div className="space-y-4">
+      <p className="text-sm text-muted-foreground">Browse {problems.length} problems by learning path, topic, and section.</p>
       {Object.entries(tree).map(([learningPath, topics]) => (
         <LearningPathNode key={learningPath} name={learningPath} topics={topics} progress={store.state.progress} />
       ))}

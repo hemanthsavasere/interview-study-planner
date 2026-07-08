@@ -1,0 +1,3814 @@
+{
+  "schemaVersion": 1,
+  "config": {
+    "deadline": "2026-10-19",
+    "hoursPerDay": 4,
+    "weekdaysOnly": true
+  },
+  "progress": {
+    "flip-characters": {
+      "problemId": "flip-characters",
+      "status": "confident",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:24.778Z",
+      "scheduledDate": "2026-07-08",
+      "requeueCount": 0
+    },
+    "palindrome-checker": {
+      "problemId": "palindrome-checker",
+      "status": "confident",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:26.328Z",
+      "scheduledDate": "2026-07-08",
+      "requeueCount": 0
+    },
+    "vowel-exchange": {
+      "problemId": "vowel-exchange",
+      "status": "confident",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:28.160Z",
+      "scheduledDate": "2026-07-08",
+      "requeueCount": 0
+    },
+    "reverse-words": {
+      "problemId": "reverse-words",
+      "status": "confident",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:45:56.735Z",
+      "scheduledDate": "2026-07-08",
+      "requeueCount": 1,
+      "requeueDate": "2026-07-11"
+    },
+    "reverse-segments": {
+      "problemId": "reverse-segments",
+      "status": "solved",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:32.289Z",
+      "scheduledDate": "2026-07-08",
+      "requeueCount": 1,
+      "requeueDate": "2026-07-11"
+    },
+    "reverse-word-order": {
+      "problemId": "reverse-word-order",
+      "status": "solved",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:45:58.125Z",
+      "scheduledDate": "2026-07-08",
+      "requeueCount": 1,
+      "requeueDate": "2026-07-11"
+    },
+    "two-sum": {
+      "problemId": "two-sum",
+      "status": "confident",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:46:41.986Z",
+      "scheduledDate": "2026-07-08",
+      "requeueCount": 0
+    },
+    "target-limited-two-sum": {
+      "problemId": "target-limited-two-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-09",
+      "requeueCount": 0
+    },
+    "duplicate-aware-two-sum": {
+      "problemId": "duplicate-aware-two-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-09",
+      "requeueCount": 0
+    },
+    "largest-container": {
+      "problemId": "largest-container",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-09",
+      "requeueCount": 0
+    },
+    "k-rotations": {
+      "problemId": "k-rotations",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-09",
+      "requeueCount": 0
+    },
+    "three-sum": {
+      "problemId": "three-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-09",
+      "requeueCount": 0
+    },
+    "approximate-three-sum": {
+      "problemId": "approximate-three-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-10",
+      "requeueCount": 0
+    },
+    "four-sum": {
+      "problemId": "four-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-10",
+      "requeueCount": 0
+    },
+    "subsequence-checker": {
+      "problemId": "subsequence-checker",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-10",
+      "requeueCount": 0
+    },
+    "merge-sorted-arrays": {
+      "problemId": "merge-sorted-arrays",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-10",
+      "requeueCount": 0
+    },
+    "unique-intersections": {
+      "problemId": "unique-intersections",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-10",
+      "requeueCount": 0
+    },
+    "repeated-intersections": {
+      "problemId": "repeated-intersections",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-10",
+      "requeueCount": 0
+    },
+    "subarray-size-equals-k": {
+      "problemId": "subarray-size-equals-k",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-11",
+      "requeueCount": 0
+    },
+    "maximum-ones": {
+      "problemId": "maximum-ones",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-11",
+      "requeueCount": 0
+    },
+    "negative-window": {
+      "problemId": "negative-window",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-11",
+      "requeueCount": 0
+    },
+    "even-odd-count": {
+      "problemId": "even-odd-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-11",
+      "requeueCount": 0
+    },
+    "consecutive-ones": {
+      "problemId": "consecutive-ones",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-11",
+      "requeueCount": 0
+    },
+    "product-conundrum": {
+      "problemId": "product-conundrum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-11",
+      "requeueCount": 0
+    },
+    "maximum-subarray-sum": {
+      "problemId": "maximum-subarray-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-12",
+      "requeueCount": 0
+    },
+    "consecutive-ones-with-k-flips": {
+      "problemId": "consecutive-ones-with-k-flips",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-12",
+      "requeueCount": 0
+    },
+    "verify-schedule": {
+      "problemId": "verify-schedule",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-12",
+      "requeueCount": 0
+    },
+    "overlap-reduction": {
+      "problemId": "overlap-reduction",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-12",
+      "requeueCount": 0
+    },
+    "employee-free-time": {
+      "problemId": "employee-free-time",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-12",
+      "requeueCount": 0
+    },
+    "insert-interval": {
+      "problemId": "insert-interval",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-13",
+      "requeueCount": 0
+    },
+    "minimum-meeting-rooms": {
+      "problemId": "minimum-meeting-rooms",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-13",
+      "requeueCount": 0
+    },
+    "remove-intervals": {
+      "problemId": "remove-intervals",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-13",
+      "requeueCount": 0
+    },
+    "busiest-interval": {
+      "problemId": "busiest-interval",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-13",
+      "requeueCount": 0
+    },
+    "peak-resource-requirement": {
+      "problemId": "peak-resource-requirement",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-13",
+      "requeueCount": 0
+    },
+    "design-a-dynamic-array": {
+      "problemId": "design-a-dynamic-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-14",
+      "requeueCount": 0
+    },
+    "row-major-traversal": {
+      "problemId": "row-major-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-14",
+      "requeueCount": 0
+    },
+    "column-major-traversal": {
+      "problemId": "column-major-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-14",
+      "requeueCount": 0
+    },
+    "boundary-node": {
+      "problemId": "boundary-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-14",
+      "requeueCount": 0
+    },
+    "node-expedition": {
+      "problemId": "node-expedition",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-14",
+      "requeueCount": 0
+    },
+    "node-search": {
+      "problemId": "node-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-14",
+      "requeueCount": 0
+    },
+    "length-of-the-list": {
+      "problemId": "length-of-the-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-14",
+      "requeueCount": 0
+    },
+    "insert-at-beginning": {
+      "problemId": "insert-at-beginning",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "insert-at-end": {
+      "problemId": "insert-at-end",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "insert-after-the-given-node": {
+      "problemId": "insert-after-the-given-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "insert-before-the-given-node": {
+      "problemId": "insert-before-the-given-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "insert-at-given-distance": {
+      "problemId": "insert-at-given-distance",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "delete-first-node": {
+      "problemId": "delete-first-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "delete-last-node": {
+      "problemId": "delete-last-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "delete-node-with-given-data": {
+      "problemId": "delete-node-with-given-data",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "delete-nodes-with-given-data": {
+      "problemId": "delete-nodes-with-given-data",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "delete-node-after-the-given-node": {
+      "problemId": "delete-node-after-the-given-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-15",
+      "requeueCount": 0
+    },
+    "delete-node-before-the-given-node": {
+      "problemId": "delete-node-before-the-given-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-16",
+      "requeueCount": 0
+    },
+    "delete-the-given-node": {
+      "problemId": "delete-the-given-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-16",
+      "requeueCount": 0
+    },
+    "delete-node-at-given-distance": {
+      "problemId": "delete-node-at-given-distance",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-16",
+      "requeueCount": 0
+    },
+    "detect-cycle": {
+      "problemId": "detect-cycle",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-16",
+      "requeueCount": 0
+    },
+    "remove-loop": {
+      "problemId": "remove-loop",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-16",
+      "requeueCount": 0
+    },
+    "reverse-a-list": {
+      "problemId": "reverse-a-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-16",
+      "requeueCount": 0
+    },
+    "reverse-first-k-nodes": {
+      "problemId": "reverse-first-k-nodes",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-16",
+      "requeueCount": 0
+    },
+    "reverse-last-k-nodes": {
+      "problemId": "reverse-last-k-nodes",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-17",
+      "requeueCount": 0
+    },
+    "reverse-the-given-segment": {
+      "problemId": "reverse-the-given-segment",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-17",
+      "requeueCount": 0
+    },
+    "pairwise-swap": {
+      "problemId": "pairwise-swap",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-17",
+      "requeueCount": 0
+    },
+    "reverse-k-segments": {
+      "problemId": "reverse-k-segments",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-17",
+      "requeueCount": 0
+    },
+    "reverse-increasing-groups": {
+      "problemId": "reverse-increasing-groups",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-18",
+      "requeueCount": 0
+    },
+    "reverse-alternate-segments": {
+      "problemId": "reverse-alternate-segments",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-18",
+      "requeueCount": 0
+    },
+    "k-maximum-sum": {
+      "problemId": "k-maximum-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-18",
+      "requeueCount": 0
+    },
+    "trim-nth-node": {
+      "problemId": "trim-nth-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-18",
+      "requeueCount": 0
+    },
+    "swap-nth-nodes": {
+      "problemId": "swap-nth-nodes",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-19",
+      "requeueCount": 0
+    },
+    "k-rotations-2": {
+      "problemId": "k-rotations-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-19",
+      "requeueCount": 0
+    },
+    "middle-node-search": {
+      "problemId": "middle-node-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-19",
+      "requeueCount": 0
+    },
+    "split-list-in-half": {
+      "problemId": "split-list-in-half",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-19",
+      "requeueCount": 0
+    },
+    "equal-halves": {
+      "problemId": "equal-halves",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-19",
+      "requeueCount": 0
+    },
+    "palindrome-checker-2": {
+      "problemId": "palindrome-checker-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-20",
+      "requeueCount": 0
+    },
+    "even-odd-split": {
+      "problemId": "even-odd-split",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-20",
+      "requeueCount": 0
+    },
+    "split-alternate-groups": {
+      "problemId": "split-alternate-groups",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-20",
+      "requeueCount": 0
+    },
+    "split-by-modulo": {
+      "problemId": "split-by-modulo",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-20",
+      "requeueCount": 0
+    },
+    "k-way-list-split": {
+      "problemId": "k-way-list-split",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-20",
+      "requeueCount": 0
+    },
+    "alternate-node-fusion": {
+      "problemId": "alternate-node-fusion",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-21",
+      "requeueCount": 0
+    },
+    "merge-sorted-lists": {
+      "problemId": "merge-sorted-lists",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-21",
+      "requeueCount": 0
+    },
+    "merge-sorted-lists-ii": {
+      "problemId": "merge-sorted-lists-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-21",
+      "requeueCount": 0
+    },
+    "list-addition": {
+      "problemId": "list-addition",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-21",
+      "requeueCount": 0
+    },
+    "relocate-node": {
+      "problemId": "relocate-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-21",
+      "requeueCount": 0
+    },
+    "parity-order": {
+      "problemId": "parity-order",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-21",
+      "requeueCount": 0
+    },
+    "value-partition": {
+      "problemId": "value-partition",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-22",
+      "requeueCount": 0
+    },
+    "shuffle-list": {
+      "problemId": "shuffle-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-22",
+      "requeueCount": 0
+    },
+    "design-a-singly-linked-list": {
+      "problemId": "design-a-singly-linked-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-22",
+      "requeueCount": 0
+    },
+    "node-expedition-2": {
+      "problemId": "node-expedition-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-22",
+      "requeueCount": 0
+    },
+    "node-expedition-ii": {
+      "problemId": "node-expedition-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-22",
+      "requeueCount": 0
+    },
+    "node-search-2": {
+      "problemId": "node-search-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-22",
+      "requeueCount": 0
+    },
+    "insert-at-beginning-2": {
+      "problemId": "insert-at-beginning-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "insert-at-end-2": {
+      "problemId": "insert-at-end-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "insert-after-the-given-node-2": {
+      "problemId": "insert-after-the-given-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "insert-before-the-given-node-2": {
+      "problemId": "insert-before-the-given-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "insert-at-given-distance-2": {
+      "problemId": "insert-at-given-distance-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "delete-first-node-2": {
+      "problemId": "delete-first-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "delete-last-node-2": {
+      "problemId": "delete-last-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "delete-node-with-given-data-2": {
+      "problemId": "delete-node-with-given-data-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "delete-nodes-with-given-data-2": {
+      "problemId": "delete-nodes-with-given-data-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "delete-node-after-the-given-node-2": {
+      "problemId": "delete-node-after-the-given-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-23",
+      "requeueCount": 0
+    },
+    "delete-node-before-the-given-node-2": {
+      "problemId": "delete-node-before-the-given-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-24",
+      "requeueCount": 0
+    },
+    "delete-the-given-node-2": {
+      "problemId": "delete-the-given-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-24",
+      "requeueCount": 0
+    },
+    "delete-node-at-given-distance-2": {
+      "problemId": "delete-node-at-given-distance-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-24",
+      "requeueCount": 0
+    },
+    "reverse-a-list-2": {
+      "problemId": "reverse-a-list-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-24",
+      "requeueCount": 0
+    },
+    "reverse-first-k-nodes-2": {
+      "problemId": "reverse-first-k-nodes-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-24",
+      "requeueCount": 0
+    },
+    "reverse-last-k-nodes-2": {
+      "problemId": "reverse-last-k-nodes-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-24",
+      "requeueCount": 0
+    },
+    "reverse-the-given-segment-2": {
+      "problemId": "reverse-the-given-segment-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-24",
+      "requeueCount": 0
+    },
+    "pairwise-swap-2": {
+      "problemId": "pairwise-swap-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-25",
+      "requeueCount": 0
+    },
+    "reverse-k-segments-2": {
+      "problemId": "reverse-k-segments-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-25",
+      "requeueCount": 0
+    },
+    "reverse-increasing-groups-2": {
+      "problemId": "reverse-increasing-groups-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-25",
+      "requeueCount": 0
+    },
+    "reverse-alternate-segments-2": {
+      "problemId": "reverse-alternate-segments-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-26",
+      "requeueCount": 0
+    },
+    "palindrome-number": {
+      "problemId": "palindrome-number",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-26",
+      "requeueCount": 0
+    },
+    "two-sum-2": {
+      "problemId": "two-sum-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-26",
+      "requeueCount": 0
+    },
+    "duplicate-aware-two-sum-2": {
+      "problemId": "duplicate-aware-two-sum-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-26",
+      "requeueCount": 0
+    },
+    "approximate-three-sum-2": {
+      "problemId": "approximate-three-sum-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-27",
+      "requeueCount": 0
+    },
+    "relocate-node-2": {
+      "problemId": "relocate-node-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-27",
+      "requeueCount": 0
+    },
+    "parity-order-2": {
+      "problemId": "parity-order-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-27",
+      "requeueCount": 0
+    },
+    "value-partition-2": {
+      "problemId": "value-partition-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-27",
+      "requeueCount": 0
+    },
+    "shuffle-list-2": {
+      "problemId": "shuffle-list-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-27",
+      "requeueCount": 0
+    },
+    "design-a-doubly-linked-list": {
+      "problemId": "design-a-doubly-linked-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-28",
+      "requeueCount": 0
+    },
+    "design-a-hash-table-with-separate-chaining": {
+      "problemId": "design-a-hash-table-with-separate-chaining",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-28",
+      "requeueCount": 0
+    },
+    "design-a-hash-table-with-linear-probing": {
+      "problemId": "design-a-hash-table-with-linear-probing",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-28",
+      "requeueCount": 0
+    },
+    "design-a-hash-table-with-quadratic-probing": {
+      "problemId": "design-a-hash-table-with-quadratic-probing",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-29",
+      "requeueCount": 0
+    },
+    "design-a-hash-table-with-double-hashing": {
+      "problemId": "design-a-hash-table-with-double-hashing",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-29",
+      "requeueCount": 0
+    },
+    "first-non-repeating-character": {
+      "problemId": "first-non-repeating-character",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-29",
+      "requeueCount": 0
+    },
+    "constructibility-check": {
+      "problemId": "constructibility-check",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-29",
+      "requeueCount": 0
+    },
+    "anagram-checker": {
+      "problemId": "anagram-checker",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-29",
+      "requeueCount": 0
+    },
+    "build-palindrome": {
+      "problemId": "build-palindrome",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-30",
+      "requeueCount": 0
+    },
+    "cluster-anagrams": {
+      "problemId": "cluster-anagrams",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-30",
+      "requeueCount": 0
+    },
+    "row-specific-words": {
+      "problemId": "row-specific-words",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-30",
+      "requeueCount": 0
+    },
+    "homomorphic-strings": {
+      "problemId": "homomorphic-strings",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-30",
+      "requeueCount": 0
+    },
+    "pattern-matching": {
+      "problemId": "pattern-matching",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-30",
+      "requeueCount": 0
+    },
+    "cluster-displaced-strings": {
+      "problemId": "cluster-displaced-strings",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-30",
+      "requeueCount": 0
+    },
+    "duplicate-detection": {
+      "problemId": "duplicate-detection",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-31",
+      "requeueCount": 0
+    },
+    "subarray-distinctness": {
+      "problemId": "subarray-distinctness",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-31",
+      "requeueCount": 0
+    },
+    "contains-variation": {
+      "problemId": "contains-variation",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-31",
+      "requeueCount": 0
+    },
+    "anagram-finder": {
+      "problemId": "anagram-finder",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-31",
+      "requeueCount": 0
+    },
+    "unique-character-span": {
+      "problemId": "unique-character-span",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-07-31",
+      "requeueCount": 0
+    },
+    "k-characters-span": {
+      "problemId": "k-characters-span",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-01",
+      "requeueCount": 0
+    },
+    "maximal-character-swap": {
+      "problemId": "maximal-character-swap",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-01",
+      "requeueCount": 0
+    },
+    "subarray-sum-equals-k": {
+      "problemId": "subarray-sum-equals-k",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-01",
+      "requeueCount": 0
+    },
+    "twin-in-proximity": {
+      "problemId": "twin-in-proximity",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-01",
+      "requeueCount": 0
+    },
+    "first-equilibrium-point": {
+      "problemId": "first-equilibrium-point",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-01",
+      "requeueCount": 0
+    },
+    "self-excluded-array-product": {
+      "problemId": "self-excluded-array-product",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-02",
+      "requeueCount": 0
+    },
+    "balanced-binary-subarray": {
+      "problemId": "balanced-binary-subarray",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-02",
+      "requeueCount": 0
+    },
+    "zero-sum-subarrays": {
+      "problemId": "zero-sum-subarrays",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-02",
+      "requeueCount": 0
+    },
+    "design-a-lru-cache": {
+      "problemId": "design-a-lru-cache",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-02",
+      "requeueCount": 0
+    },
+    "design-a-randomised-set": {
+      "problemId": "design-a-randomised-set",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-02",
+      "requeueCount": 0
+    },
+    "design-a-stack-using-an-array": {
+      "problemId": "design-a-stack-using-an-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-03",
+      "requeueCount": 0
+    },
+    "design-two-stacks-in-an-array": {
+      "problemId": "design-two-stacks-in-an-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-03",
+      "requeueCount": 0
+    },
+    "design-a-stack-using-a-linked-list": {
+      "problemId": "design-a-stack-using-a-linked-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-03",
+      "requeueCount": 0
+    },
+    "evaluate-a-postfix-expression": {
+      "problemId": "evaluate-a-postfix-expression",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-03",
+      "requeueCount": 0
+    },
+    "evaluate-a-prefix-expression": {
+      "problemId": "evaluate-a-prefix-expression",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-03",
+      "requeueCount": 0
+    },
+    "evaluate-an-infix-expression": {
+      "problemId": "evaluate-an-infix-expression",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-04",
+      "requeueCount": 0
+    },
+    "convert-postfix-to-prefix": {
+      "problemId": "convert-postfix-to-prefix",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-04",
+      "requeueCount": 0
+    },
+    "convert-postfix-to-infix": {
+      "problemId": "convert-postfix-to-infix",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-04",
+      "requeueCount": 0
+    },
+    "convert-prefix-to-postfix": {
+      "problemId": "convert-prefix-to-postfix",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-04",
+      "requeueCount": 0
+    },
+    "convert-prefix-to-infix": {
+      "problemId": "convert-prefix-to-infix",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-04",
+      "requeueCount": 0
+    },
+    "convert-infix-to-postfix": {
+      "problemId": "convert-infix-to-postfix",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-05",
+      "requeueCount": 0
+    },
+    "convert-infix-to-prefix": {
+      "problemId": "convert-infix-to-prefix",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-05",
+      "requeueCount": 0
+    },
+    "stack-inversion": {
+      "problemId": "stack-inversion",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-05",
+      "requeueCount": 0
+    },
+    "reverse-the-string": {
+      "problemId": "reverse-the-string",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-05",
+      "requeueCount": 0
+    },
+    "reverse-an-array": {
+      "problemId": "reverse-an-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-05",
+      "requeueCount": 0
+    },
+    "reverse-word-order-2": {
+      "problemId": "reverse-word-order-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-06",
+      "requeueCount": 0
+    },
+    "preceding-superior-element": {
+      "problemId": "preceding-superior-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-06",
+      "requeueCount": 0
+    },
+    "preceding-inferior-element": {
+      "problemId": "preceding-inferior-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-06",
+      "requeueCount": 0
+    },
+    "preceding-superior-element-ii": {
+      "problemId": "preceding-superior-element-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-06",
+      "requeueCount": 0
+    },
+    "preceding-inferior-element-ii": {
+      "problemId": "preceding-inferior-element-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-06",
+      "requeueCount": 0
+    },
+    "succeeding-superior-element": {
+      "problemId": "succeeding-superior-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-06",
+      "requeueCount": 0
+    },
+    "succeeding-inferior-element": {
+      "problemId": "succeeding-inferior-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-07",
+      "requeueCount": 0
+    },
+    "succeeding-superior-element-ii": {
+      "problemId": "succeeding-superior-element-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-07",
+      "requeueCount": 0
+    },
+    "succeeding-inferior-element-ii": {
+      "problemId": "succeeding-inferior-element-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-07",
+      "requeueCount": 0
+    },
+    "succeeding-superior-nodes": {
+      "problemId": "succeeding-superior-nodes",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-07",
+      "requeueCount": 0
+    },
+    "retained-rainwater": {
+      "problemId": "retained-rainwater",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-08",
+      "requeueCount": 0
+    },
+    "largest-rectangle-area": {
+      "problemId": "largest-rectangle-area",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-08",
+      "requeueCount": 0
+    },
+    "parentheses-checker": {
+      "problemId": "parentheses-checker",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-08",
+      "requeueCount": 0
+    },
+    "minimum-edits": {
+      "problemId": "minimum-edits",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-08",
+      "requeueCount": 0
+    },
+    "redundant-parentheses": {
+      "problemId": "redundant-parentheses",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-09",
+      "requeueCount": 0
+    },
+    "balanced-span": {
+      "problemId": "balanced-span",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-09",
+      "requeueCount": 0
+    },
+    "canonicalise-path": {
+      "problemId": "canonicalise-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-09",
+      "requeueCount": 0
+    },
+    "bracketed-reversal": {
+      "problemId": "bracketed-reversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-09",
+      "requeueCount": 0
+    },
+    "string-expansion": {
+      "problemId": "string-expansion",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-10",
+      "requeueCount": 0
+    },
+    "formula-parsing": {
+      "problemId": "formula-parsing",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-10",
+      "requeueCount": 0
+    },
+    "design-a-min-stack": {
+      "problemId": "design-a-min-stack",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-10",
+      "requeueCount": 0
+    },
+    "design-a-max-stack": {
+      "problemId": "design-a-max-stack",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-10",
+      "requeueCount": 0
+    },
+    "design-a-queue-using-circular-array": {
+      "problemId": "design-a-queue-using-circular-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-11",
+      "requeueCount": 0
+    },
+    "design-a-queue-using-linked-list": {
+      "problemId": "design-a-queue-using-linked-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-11",
+      "requeueCount": 0
+    },
+    "design-a-queue-using-stacks": {
+      "problemId": "design-a-queue-using-stacks",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-11",
+      "requeueCount": 0
+    },
+    "design-a-stack-using-queues": {
+      "problemId": "design-a-stack-using-queues",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-11",
+      "requeueCount": 0
+    },
+    "design-a-stack-using-a-single-queue": {
+      "problemId": "design-a-stack-using-a-single-queue",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-11",
+      "requeueCount": 0
+    },
+    "implement-recursive-preorder-traversal": {
+      "problemId": "implement-recursive-preorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "implement-recursive-inorder-traversal": {
+      "problemId": "implement-recursive-inorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "implement-recursive-postorder-traversal": {
+      "problemId": "implement-recursive-postorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "implement-iterative-preorder-traversal": {
+      "problemId": "implement-iterative-preorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "implement-iterative-inorder-traversal": {
+      "problemId": "implement-iterative-inorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "implement-iterative-postorder-traversal": {
+      "problemId": "implement-iterative-postorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "implement-level-order-traversal": {
+      "problemId": "implement-level-order-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "construct-tree-using-preorder-and-inorder-traversal": {
+      "problemId": "construct-tree-using-preorder-and-inorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "construct-tree-using-postorder-and-inorder-traversal": {
+      "problemId": "construct-tree-using-postorder-and-inorder-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "insert-at-root": {
+      "problemId": "insert-at-root",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-12",
+      "requeueCount": 0
+    },
+    "recursively-insert-a-leaf": {
+      "problemId": "recursively-insert-a-leaf",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "iteratively-insert-a-leaf": {
+      "problemId": "iteratively-insert-a-leaf",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "insert-a-child": {
+      "problemId": "insert-a-child",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "insert-a-parent": {
+      "problemId": "insert-a-parent",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "sum-of-path": {
+      "problemId": "sum-of-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "depth-assignment": {
+      "problemId": "depth-assignment",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "concatenated-path": {
+      "problemId": "concatenated-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "increasing-path": {
+      "problemId": "increasing-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-13",
+      "requeueCount": 0
+    },
+    "duplicates-in-path": {
+      "problemId": "duplicates-in-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-14",
+      "requeueCount": 0
+    },
+    "second-minimum": {
+      "problemId": "second-minimum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-14",
+      "requeueCount": 0
+    },
+    "left-view": {
+      "problemId": "left-view",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-14",
+      "requeueCount": 0
+    },
+    "right-view": {
+      "problemId": "right-view",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-14",
+      "requeueCount": 0
+    },
+    "sum-of-leaves": {
+      "problemId": "sum-of-leaves",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-14",
+      "requeueCount": 0
+    },
+    "height-of-binary-tree": {
+      "problemId": "height-of-binary-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-15",
+      "requeueCount": 0
+    },
+    "maximum-path-sum": {
+      "problemId": "maximum-path-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-15",
+      "requeueCount": 0
+    },
+    "full-binary-tree": {
+      "problemId": "full-binary-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-15",
+      "requeueCount": 0
+    },
+    "perfect-binary-tree": {
+      "problemId": "perfect-binary-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-15",
+      "requeueCount": 0
+    },
+    "collect-leaves": {
+      "problemId": "collect-leaves",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-15",
+      "requeueCount": 0
+    },
+    "diameter-of-tree": {
+      "problemId": "diameter-of-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-15",
+      "requeueCount": 0
+    },
+    "descendants-sum-count": {
+      "problemId": "descendants-sum-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-16",
+      "requeueCount": 0
+    },
+    "distribute-coins": {
+      "problemId": "distribute-coins",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-16",
+      "requeueCount": 0
+    },
+    "most-frequent-subtree-sum": {
+      "problemId": "most-frequent-subtree-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-16",
+      "requeueCount": 0
+    },
+    "longest-monotonic-path": {
+      "problemId": "longest-monotonic-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-16",
+      "requeueCount": 0
+    },
+    "monotonic-subtree-count": {
+      "problemId": "monotonic-subtree-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-16",
+      "requeueCount": 0
+    },
+    "path-sum-count": {
+      "problemId": "path-sum-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-17",
+      "requeueCount": 0
+    },
+    "root-to-leaf-path": {
+      "problemId": "root-to-leaf-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-17",
+      "requeueCount": 0
+    },
+    "binary-summation-of-tree": {
+      "problemId": "binary-summation-of-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-17",
+      "requeueCount": 0
+    },
+    "even-path": {
+      "problemId": "even-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-17",
+      "requeueCount": 0
+    },
+    "odd-count": {
+      "problemId": "odd-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-17",
+      "requeueCount": 0
+    },
+    "root-to-leaf-paths": {
+      "problemId": "root-to-leaf-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-17",
+      "requeueCount": 0
+    },
+    "equal-paths": {
+      "problemId": "equal-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-18",
+      "requeueCount": 0
+    },
+    "duplicate-paths": {
+      "problemId": "duplicate-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-18",
+      "requeueCount": 0
+    },
+    "prefix-paths": {
+      "problemId": "prefix-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-18",
+      "requeueCount": 0
+    },
+    "level-sum": {
+      "problemId": "level-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-18",
+      "requeueCount": 0
+    },
+    "deepest-leaves-sum": {
+      "problemId": "deepest-leaves-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-18",
+      "requeueCount": 0
+    },
+    "complete-binary-tree": {
+      "problemId": "complete-binary-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-19",
+      "requeueCount": 0
+    },
+    "zigzag-traversal": {
+      "problemId": "zigzag-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-19",
+      "requeueCount": 0
+    },
+    "cousin-check": {
+      "problemId": "cousin-check",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-19",
+      "requeueCount": 0
+    },
+    "top-view": {
+      "problemId": "top-view",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-19",
+      "requeueCount": 0
+    },
+    "bottom-view": {
+      "problemId": "bottom-view",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-19",
+      "requeueCount": 0
+    },
+    "vertical-traversal": {
+      "problemId": "vertical-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-20",
+      "requeueCount": 0
+    },
+    "diagonal-traversal": {
+      "problemId": "diagonal-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-20",
+      "requeueCount": 0
+    },
+    "lowest-common-ancestor": {
+      "problemId": "lowest-common-ancestor",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-20",
+      "requeueCount": 0
+    },
+    "lowest-common-ancestor-ii": {
+      "problemId": "lowest-common-ancestor-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-20",
+      "requeueCount": 0
+    },
+    "random-lowest-common-ancestor": {
+      "problemId": "random-lowest-common-ancestor",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-20",
+      "requeueCount": 0
+    },
+    "deepest-lowest-common-ancestor": {
+      "problemId": "deepest-lowest-common-ancestor",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-21",
+      "requeueCount": 0
+    },
+    "distance-between-nodes": {
+      "problemId": "distance-between-nodes",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-21",
+      "requeueCount": 0
+    },
+    "identical-trees": {
+      "problemId": "identical-trees",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-21",
+      "requeueCount": 0
+    },
+    "symmetry-detection": {
+      "problemId": "symmetry-detection",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-21",
+      "requeueCount": 0
+    },
+    "subtree-detection": {
+      "problemId": "subtree-detection",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-21",
+      "requeueCount": 0
+    },
+    "merge-trees": {
+      "problemId": "merge-trees",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-21",
+      "requeueCount": 0
+    },
+    "boundary-traversal": {
+      "problemId": "boundary-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "balance-factor": {
+      "problemId": "balance-factor",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "balance-of-subtree": {
+      "problemId": "balance-of-subtree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "height-balanced-tree": {
+      "problemId": "height-balanced-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "implement-recursive-search": {
+      "problemId": "implement-recursive-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "recursively-find-minimum": {
+      "problemId": "recursively-find-minimum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "recursively-find-maximum": {
+      "problemId": "recursively-find-maximum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "recursively-find-lower-bound": {
+      "problemId": "recursively-find-lower-bound",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "recursively-find-upper-bound": {
+      "problemId": "recursively-find-upper-bound",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-22",
+      "requeueCount": 0
+    },
+    "implement-iterative-search": {
+      "problemId": "implement-iterative-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "iteratively-find-minimum": {
+      "problemId": "iteratively-find-minimum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "iteratively-find-maximum": {
+      "problemId": "iteratively-find-maximum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "iteratively-find-lower-bound": {
+      "problemId": "iteratively-find-lower-bound",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "iteratively-find-upper-bound": {
+      "problemId": "iteratively-find-upper-bound",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "closest-value": {
+      "problemId": "closest-value",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "recursively-insert-a-node": {
+      "problemId": "recursively-insert-a-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "iteratively-insert-a-node": {
+      "problemId": "iteratively-insert-a-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "inorder-successor": {
+      "problemId": "inorder-successor",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-23",
+      "requeueCount": 0
+    },
+    "recursively-delete-a-node": {
+      "problemId": "recursively-delete-a-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-24",
+      "requeueCount": 0
+    },
+    "iteratively-delete-a-node": {
+      "problemId": "iteratively-delete-a-node",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-24",
+      "requeueCount": 0
+    },
+    "construct-bst-from-a-sorted-array": {
+      "problemId": "construct-bst-from-a-sorted-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-24",
+      "requeueCount": 0
+    },
+    "construct-bst-from-an-unsorted-array": {
+      "problemId": "construct-bst-from-an-unsorted-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-24",
+      "requeueCount": 0
+    },
+    "sorted-linked-list-to-bst": {
+      "problemId": "sorted-linked-list-to-bst",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-24",
+      "requeueCount": 0
+    },
+    "lowest-common-ancestor-2": {
+      "problemId": "lowest-common-ancestor-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-24",
+      "requeueCount": 0
+    },
+    "design-a-forward-bst-iterator": {
+      "problemId": "design-a-forward-bst-iterator",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-24",
+      "requeueCount": 0
+    },
+    "design-a-reverse-bst-iterator": {
+      "problemId": "design-a-reverse-bst-iterator",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-25",
+      "requeueCount": 0
+    },
+    "lowest-absolute-variance": {
+      "problemId": "lowest-absolute-variance",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-25",
+      "requeueCount": 0
+    },
+    "bst-validator": {
+      "problemId": "bst-validator",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-25",
+      "requeueCount": 0
+    },
+    "bst-to-sorted-array": {
+      "problemId": "bst-to-sorted-array",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-25",
+      "requeueCount": 0
+    },
+    "bst-to-dll": {
+      "problemId": "bst-to-dll",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-25",
+      "requeueCount": 0
+    },
+    "rank-nodes": {
+      "problemId": "rank-nodes",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-25",
+      "requeueCount": 0
+    },
+    "kth-largest-element": {
+      "problemId": "kth-largest-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-26",
+      "requeueCount": 0
+    },
+    "enriched-sum-tree": {
+      "problemId": "enriched-sum-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-26",
+      "requeueCount": 0
+    },
+    "multiple-replacement": {
+      "problemId": "multiple-replacement",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-26",
+      "requeueCount": 0
+    },
+    "range-summation": {
+      "problemId": "range-summation",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-26",
+      "requeueCount": 0
+    },
+    "range-diameter": {
+      "problemId": "range-diameter",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-26",
+      "requeueCount": 0
+    },
+    "range-leaves": {
+      "problemId": "range-leaves",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-27",
+      "requeueCount": 0
+    },
+    "range-exclusive-trim": {
+      "problemId": "range-exclusive-trim",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-27",
+      "requeueCount": 0
+    },
+    "two-sum-on-bst": {
+      "problemId": "two-sum-on-bst",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-27",
+      "requeueCount": 0
+    },
+    "multiple-tree": {
+      "problemId": "multiple-tree",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-27",
+      "requeueCount": 0
+    },
+    "median-in-bst": {
+      "problemId": "median-in-bst",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-27",
+      "requeueCount": 0
+    },
+    "bst-pair-sum": {
+      "problemId": "bst-pair-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-28",
+      "requeueCount": 0
+    },
+    "tree-heap-validator": {
+      "problemId": "tree-heap-validator",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-28",
+      "requeueCount": 0
+    },
+    "min-heap-to-max-heap": {
+      "problemId": "min-heap-to-max-heap",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-28",
+      "requeueCount": 0
+    },
+    "max-heap-to-min-heap": {
+      "problemId": "max-heap-to-min-heap",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-28",
+      "requeueCount": 0
+    },
+    "kth-largest-element-2": {
+      "problemId": "kth-largest-element-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-28",
+      "requeueCount": 0
+    },
+    "kth-smallest-element": {
+      "problemId": "kth-smallest-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-29",
+      "requeueCount": 0
+    },
+    "k-range-sum": {
+      "problemId": "k-range-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-29",
+      "requeueCount": 0
+    },
+    "k-sorted-array-sorting": {
+      "problemId": "k-sorted-array-sorting",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-29",
+      "requeueCount": 0
+    },
+    "k-most-frequent-elements": {
+      "problemId": "k-most-frequent-elements",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-29",
+      "requeueCount": 0
+    },
+    "k-smallest-sum-pairs": {
+      "problemId": "k-smallest-sum-pairs",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-29",
+      "requeueCount": 0
+    },
+    "k-closest-values": {
+      "problemId": "k-closest-values",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-30",
+      "requeueCount": 0
+    },
+    "k-arrays-smallest-range": {
+      "problemId": "k-arrays-smallest-range",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-30",
+      "requeueCount": 0
+    },
+    "k-way-list-merge": {
+      "problemId": "k-way-list-merge",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-30",
+      "requeueCount": 0
+    },
+    "design-a-max-heap": {
+      "problemId": "design-a-max-heap",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-31",
+      "requeueCount": 0
+    },
+    "design-a-min-heap": {
+      "problemId": "design-a-min-heap",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-31",
+      "requeueCount": 0
+    },
+    "design-a-median-finder": {
+      "problemId": "design-a-median-finder",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-31",
+      "requeueCount": 0
+    },
+    "clone-adjacency-list": {
+      "problemId": "clone-adjacency-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-08-31",
+      "requeueCount": 0
+    },
+    "adjacency-list-to-adjacency-matrix": {
+      "problemId": "adjacency-list-to-adjacency-matrix",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "adjacency-matrix-to-adjacency-list": {
+      "problemId": "adjacency-matrix-to-adjacency-list",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "implement-depth-first-traversal": {
+      "problemId": "implement-depth-first-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "implement-breadth-first-traversal": {
+      "problemId": "implement-breadth-first-traversal",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "implement-depth-first-traversal-on-a-grid": {
+      "problemId": "implement-depth-first-traversal-on-a-grid",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "implement-breadth-first-traversal-on-a-grid": {
+      "problemId": "implement-breadth-first-traversal-on-a-grid",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "detect-cycle-in-an-undirected-graph": {
+      "problemId": "detect-cycle-in-an-undirected-graph",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "detect-cycle-in-a-directed-graph": {
+      "problemId": "detect-cycle-in-a-directed-graph",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-01",
+      "requeueCount": 0
+    },
+    "implement-topological-sort": {
+      "problemId": "implement-topological-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-02",
+      "requeueCount": 0
+    },
+    "implement-topological-sort-ii": {
+      "problemId": "implement-topological-sort-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-02",
+      "requeueCount": 0
+    },
+    "implement-dijkstra-s-algorithm": {
+      "problemId": "implement-dijkstra-s-algorithm",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-02",
+      "requeueCount": 0
+    },
+    "implement-bellman-ford-algorithm": {
+      "problemId": "implement-bellman-ford-algorithm",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-02",
+      "requeueCount": 0
+    },
+    "implement-floyd-warshall-algorithm": {
+      "problemId": "implement-floyd-warshall-algorithm",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-03",
+      "requeueCount": 0
+    },
+    "find-maximum-flow": {
+      "problemId": "find-maximum-flow",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-03",
+      "requeueCount": 0
+    },
+    "maximum-bipartite-matching": {
+      "problemId": "maximum-bipartite-matching",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-03",
+      "requeueCount": 0
+    },
+    "maximum-bipartite-matching-ii": {
+      "problemId": "maximum-bipartite-matching-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-03",
+      "requeueCount": 0
+    },
+    "source-to-target-paths": {
+      "problemId": "source-to-target-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-04",
+      "requeueCount": 0
+    },
+    "target-paths": {
+      "problemId": "target-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-04",
+      "requeueCount": 0
+    },
+    "hamiltonian-paths": {
+      "problemId": "hamiltonian-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-04",
+      "requeueCount": 0
+    },
+    "simple-cycles": {
+      "problemId": "simple-cycles",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-04",
+      "requeueCount": 0
+    },
+    "find-connected-components": {
+      "problemId": "find-connected-components",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-04",
+      "requeueCount": 0
+    },
+    "sum-of-minimums": {
+      "problemId": "sum-of-minimums",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-05",
+      "requeueCount": 0
+    },
+    "island-count": {
+      "problemId": "island-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-05",
+      "requeueCount": 0
+    },
+    "size-of-largest-island": {
+      "problemId": "size-of-largest-island",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-05",
+      "requeueCount": 0
+    },
+    "two-colourable": {
+      "problemId": "two-colourable",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-05",
+      "requeueCount": 0
+    },
+    "dislike-pairs": {
+      "problemId": "dislike-pairs",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-05",
+      "requeueCount": 0
+    },
+    "colour-repair": {
+      "problemId": "colour-repair",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-06",
+      "requeueCount": 0
+    },
+    "group-colourable": {
+      "problemId": "group-colourable",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-06",
+      "requeueCount": 0
+    },
+    "minimum-steps-in-a-grid": {
+      "problemId": "minimum-steps-in-a-grid",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-06",
+      "requeueCount": 0
+    },
+    "nearest-distance": {
+      "problemId": "nearest-distance",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-06",
+      "requeueCount": 0
+    },
+    "shortest-word-transformation": {
+      "problemId": "shortest-word-transformation",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-07",
+      "requeueCount": 0
+    },
+    "minimum-steps-in-a-grid-ii": {
+      "problemId": "minimum-steps-in-a-grid-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-07",
+      "requeueCount": 0
+    },
+    "minimum-cost-path": {
+      "problemId": "minimum-cost-path",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-07",
+      "requeueCount": 0
+    },
+    "cheapest-flights": {
+      "problemId": "cheapest-flights",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-08",
+      "requeueCount": 0
+    },
+    "minimum-travel-time": {
+      "problemId": "minimum-travel-time",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-08",
+      "requeueCount": 0
+    },
+    "teleporter-grid": {
+      "problemId": "teleporter-grid",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-08",
+      "requeueCount": 0
+    },
+    "forward-sequence": {
+      "problemId": "forward-sequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-08",
+      "requeueCount": 0
+    },
+    "calculate-factorial": {
+      "problemId": "calculate-factorial",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-09",
+      "requeueCount": 0
+    },
+    "sum-of-digits": {
+      "problemId": "sum-of-digits",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-09",
+      "requeueCount": 0
+    },
+    "reverse-a-queue": {
+      "problemId": "reverse-a-queue",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-09",
+      "requeueCount": 0
+    },
+    "reverse-sequence": {
+      "problemId": "reverse-sequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-09",
+      "requeueCount": 0
+    },
+    "search-element": {
+      "problemId": "search-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-09",
+      "requeueCount": 0
+    },
+    "is-palindrome": {
+      "problemId": "is-palindrome",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-09",
+      "requeueCount": 0
+    },
+    "reverse-a-list-3": {
+      "problemId": "reverse-a-list-3",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-09",
+      "requeueCount": 0
+    },
+    "fibonacci-number": {
+      "problemId": "fibonacci-number",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-10",
+      "requeueCount": 0
+    },
+    "zigzag-sequence": {
+      "problemId": "zigzag-sequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-10",
+      "requeueCount": 0
+    },
+    "climb-stairs": {
+      "problemId": "climb-stairs",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-10",
+      "requeueCount": 0
+    },
+    "catalan-number": {
+      "problemId": "catalan-number",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-10",
+      "requeueCount": 0
+    },
+    "binomial-coefficient": {
+      "problemId": "binomial-coefficient",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-10",
+      "requeueCount": 0
+    },
+    "lattice-paths": {
+      "problemId": "lattice-paths",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-10",
+      "requeueCount": 0
+    },
+    "ackermann-function": {
+      "problemId": "ackermann-function",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-10",
+      "requeueCount": 0
+    },
+    "egg-dropping": {
+      "problemId": "egg-dropping",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-11",
+      "requeueCount": 0
+    },
+    "unique-subsets": {
+      "problemId": "unique-subsets",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-11",
+      "requeueCount": 0
+    },
+    "case-transformations": {
+      "problemId": "case-transformations",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-11",
+      "requeueCount": 0
+    },
+    "number-sequence": {
+      "problemId": "number-sequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-11",
+      "requeueCount": 0
+    },
+    "phone-combinations": {
+      "problemId": "phone-combinations",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-12",
+      "requeueCount": 0
+    },
+    "generate-parentheses": {
+      "problemId": "generate-parentheses",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-12",
+      "requeueCount": 0
+    },
+    "target-sum-combinations": {
+      "problemId": "target-sum-combinations",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-12",
+      "requeueCount": 0
+    },
+    "generate-ip-addresses": {
+      "problemId": "generate-ip-addresses",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-12",
+      "requeueCount": 0
+    },
+    "string-permutations": {
+      "problemId": "string-permutations",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-12",
+      "requeueCount": 0
+    },
+    "rat-in-a-maze": {
+      "problemId": "rat-in-a-maze",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-13",
+      "requeueCount": 0
+    },
+    "word-quest": {
+      "problemId": "word-quest",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-13",
+      "requeueCount": 0
+    },
+    "solve-n-queens": {
+      "problemId": "solve-n-queens",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-13",
+      "requeueCount": 0
+    },
+    "solve-sudoku": {
+      "problemId": "solve-sudoku",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-13",
+      "requeueCount": 0
+    },
+    "order-check": {
+      "problemId": "order-check",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-bubble-sort": {
+      "problemId": "implement-bubble-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-selection-sort": {
+      "problemId": "implement-selection-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-insertion-sort": {
+      "problemId": "implement-insertion-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-counting-sort": {
+      "problemId": "implement-counting-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-quicksort": {
+      "problemId": "implement-quicksort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "top-k-elements": {
+      "problemId": "top-k-elements",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-dutch-national-flag-sort": {
+      "problemId": "implement-dutch-national-flag-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-three-way-quicksort": {
+      "problemId": "implement-three-way-quicksort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-14",
+      "requeueCount": 0
+    },
+    "implement-merge-sort": {
+      "problemId": "implement-merge-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-15",
+      "requeueCount": 0
+    },
+    "count-inversions": {
+      "problemId": "count-inversions",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-15",
+      "requeueCount": 0
+    },
+    "implement-heapsort": {
+      "problemId": "implement-heapsort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-15",
+      "requeueCount": 0
+    },
+    "kth-smallest-element-2": {
+      "problemId": "kth-smallest-element-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-15",
+      "requeueCount": 0
+    },
+    "median-finder": {
+      "problemId": "median-finder",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-15",
+      "requeueCount": 0
+    },
+    "k-closest-elements": {
+      "problemId": "k-closest-elements",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-15",
+      "requeueCount": 0
+    },
+    "k-most-frequent-elements-2": {
+      "problemId": "k-most-frequent-elements-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-16",
+      "requeueCount": 0
+    },
+    "bitwise-sort": {
+      "problemId": "bitwise-sort",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-16",
+      "requeueCount": 0
+    },
+    "sort-characters-by-frequency": {
+      "problemId": "sort-characters-by-frequency",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-16",
+      "requeueCount": 0
+    },
+    "largest-number": {
+      "problemId": "largest-number",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-16",
+      "requeueCount": 0
+    },
+    "sort-people-by-height": {
+      "problemId": "sort-people-by-height",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-16",
+      "requeueCount": 0
+    },
+    "implement-binary-search": {
+      "problemId": "implement-binary-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-17",
+      "requeueCount": 0
+    },
+    "implement-lower-bound": {
+      "problemId": "implement-lower-bound",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-17",
+      "requeueCount": 0
+    },
+    "implement-upper-bound": {
+      "problemId": "implement-upper-bound",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-17",
+      "requeueCount": 0
+    },
+    "implement-2d-binary-search": {
+      "problemId": "implement-2d-binary-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-17",
+      "requeueCount": 0
+    },
+    "implement-staircase-search": {
+      "problemId": "implement-staircase-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-17",
+      "requeueCount": 0
+    },
+    "rotated-array-minimum": {
+      "problemId": "rotated-array-minimum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-17",
+      "requeueCount": 0
+    },
+    "rotated-array-search": {
+      "problemId": "rotated-array-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-17",
+      "requeueCount": 0
+    },
+    "recovery-validation": {
+      "problemId": "recovery-validation",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-18",
+      "requeueCount": 0
+    },
+    "reverse-binary-search": {
+      "problemId": "reverse-binary-search",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-18",
+      "requeueCount": 0
+    },
+    "minimum-shared-element": {
+      "problemId": "minimum-shared-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-18",
+      "requeueCount": 0
+    },
+    "intersecting-elements": {
+      "problemId": "intersecting-elements",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-18",
+      "requeueCount": 0
+    },
+    "search-insert-position": {
+      "problemId": "search-insert-position",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-18",
+      "requeueCount": 0
+    },
+    "first-and-last-position": {
+      "problemId": "first-and-last-position",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-18",
+      "requeueCount": 0
+    },
+    "closest-element": {
+      "problemId": "closest-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-19",
+      "requeueCount": 0
+    },
+    "k-closest-elements-2": {
+      "problemId": "k-closest-elements-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-19",
+      "requeueCount": 0
+    },
+    "limit-count": {
+      "problemId": "limit-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-19",
+      "requeueCount": 0
+    },
+    "positive-index": {
+      "problemId": "positive-index",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-19",
+      "requeueCount": 0
+    },
+    "ceiling-index": {
+      "problemId": "ceiling-index",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-19",
+      "requeueCount": 0
+    },
+    "breaking-index": {
+      "problemId": "breaking-index",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-19",
+      "requeueCount": 0
+    },
+    "punctual-arrival-speed": {
+      "problemId": "punctual-arrival-speed",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-20",
+      "requeueCount": 0
+    },
+    "penalty-with-balls": {
+      "problemId": "penalty-with-balls",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-20",
+      "requeueCount": 0
+    },
+    "minimum-shipping-capacity": {
+      "problemId": "minimum-shipping-capacity",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-20",
+      "requeueCount": 0
+    },
+    "trip-completion-frenzy": {
+      "problemId": "trip-completion-frenzy",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-20",
+      "requeueCount": 0
+    },
+    "calculate-square-root": {
+      "problemId": "calculate-square-root",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-20",
+      "requeueCount": 0
+    },
+    "build-staircase": {
+      "problemId": "build-staircase",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-21",
+      "requeueCount": 0
+    },
+    "k-ribbons": {
+      "problemId": "k-ribbons",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-21",
+      "requeueCount": 0
+    },
+    "equalise-water": {
+      "problemId": "equalise-water",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-21",
+      "requeueCount": 0
+    },
+    "calculate-factorial-2": {
+      "problemId": "calculate-factorial-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-21",
+      "requeueCount": 0
+    },
+    "nth-fibonacci-number": {
+      "problemId": "nth-fibonacci-number",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-21",
+      "requeueCount": 0
+    },
+    "longest-increasing-subsequence": {
+      "problemId": "longest-increasing-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-21",
+      "requeueCount": 0
+    },
+    "largest-sum-ascending-subsequence": {
+      "problemId": "largest-sum-ascending-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-22",
+      "requeueCount": 0
+    },
+    "longest-common-subsequence": {
+      "problemId": "longest-common-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-22",
+      "requeueCount": 0
+    },
+    "longest-common-subsequence-ii": {
+      "problemId": "longest-common-subsequence-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-22",
+      "requeueCount": 0
+    },
+    "longest-common-substring": {
+      "problemId": "longest-common-substring",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-22",
+      "requeueCount": 0
+    },
+    "edit-distance": {
+      "problemId": "edit-distance",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-23",
+      "requeueCount": 0
+    },
+    "longest-palindromic-subsequence": {
+      "problemId": "longest-palindromic-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-23",
+      "requeueCount": 0
+    },
+    "minimum-partitioning": {
+      "problemId": "minimum-partitioning",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-23",
+      "requeueCount": 0
+    },
+    "word-break": {
+      "problemId": "word-break",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-23",
+      "requeueCount": 0
+    },
+    "zero-one-knapsack": {
+      "problemId": "zero-one-knapsack",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-24",
+      "requeueCount": 0
+    },
+    "zero-one-knapsack-ii": {
+      "problemId": "zero-one-knapsack-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-24",
+      "requeueCount": 0
+    },
+    "subset-sum": {
+      "problemId": "subset-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-24",
+      "requeueCount": 0
+    },
+    "rod-cutting": {
+      "problemId": "rod-cutting",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-24",
+      "requeueCount": 0
+    },
+    "coin-change": {
+      "problemId": "coin-change",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-25",
+      "requeueCount": 0
+    },
+    "coin-change-ii": {
+      "problemId": "coin-change-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-25",
+      "requeueCount": 0
+    },
+    "matrix-chain-multiplication": {
+      "problemId": "matrix-chain-multiplication",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-25",
+      "requeueCount": 0
+    },
+    "wildcard-pattern-matching": {
+      "problemId": "wildcard-pattern-matching",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-25",
+      "requeueCount": 0
+    },
+    "interleaving-check": {
+      "problemId": "interleaving-check",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-26",
+      "requeueCount": 0
+    },
+    "partition-with-equal-sum": {
+      "problemId": "partition-with-equal-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-26",
+      "requeueCount": 0
+    },
+    "sets-with-smallest-discrepancy": {
+      "problemId": "sets-with-smallest-discrepancy",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-26",
+      "requeueCount": 0
+    },
+    "longest-ascending-route": {
+      "problemId": "longest-ascending-route",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-26",
+      "requeueCount": 0
+    },
+    "largest-square-area": {
+      "problemId": "largest-square-area",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-27",
+      "requeueCount": 0
+    },
+    "destination-path-count": {
+      "problemId": "destination-path-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-27",
+      "requeueCount": 0
+    },
+    "largest-plus-of-1-s": {
+      "problemId": "largest-plus-of-1-s",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-27",
+      "requeueCount": 0
+    },
+    "k-limited-submatrix-sum": {
+      "problemId": "k-limited-submatrix-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-27",
+      "requeueCount": 0
+    },
+    "maximum-submatrix-sum": {
+      "problemId": "maximum-submatrix-sum",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-27",
+      "requeueCount": 0
+    },
+    "design-a-range-sum-finder": {
+      "problemId": "design-a-range-sum-finder",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-28",
+      "requeueCount": 0
+    },
+    "covering-distance": {
+      "problemId": "covering-distance",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-28",
+      "requeueCount": 0
+    },
+    "reachability-check": {
+      "problemId": "reachability-check",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-28",
+      "requeueCount": 0
+    },
+    "longest-bitonic-subsequence": {
+      "problemId": "longest-bitonic-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-28",
+      "requeueCount": 0
+    },
+    "longest-alternating-subsequence": {
+      "problemId": "longest-alternating-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-28",
+      "requeueCount": 0
+    },
+    "pattern-as-subsequence": {
+      "problemId": "pattern-as-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-29",
+      "requeueCount": 0
+    },
+    "shortest-common-supersequence": {
+      "problemId": "shortest-common-supersequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-29",
+      "requeueCount": 0
+    },
+    "longest-repeated-subsequence": {
+      "problemId": "longest-repeated-subsequence",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-29",
+      "requeueCount": 0
+    },
+    "kth-bit-check": {
+      "problemId": "kth-bit-check",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-29",
+      "requeueCount": 0
+    },
+    "set-kth-bit": {
+      "problemId": "set-kth-bit",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-29",
+      "requeueCount": 0
+    },
+    "unset-kth-bit": {
+      "problemId": "unset-kth-bit",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "toggle-kth-bit": {
+      "problemId": "toggle-kth-bit",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "only-set-bit": {
+      "problemId": "only-set-bit",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "rightmost-set-bit": {
+      "problemId": "rightmost-set-bit",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "reverse-bits": {
+      "problemId": "reverse-bits",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "circular-shift-bits": {
+      "problemId": "circular-shift-bits",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "have-opposite-signs": {
+      "problemId": "have-opposite-signs",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "swap-numbers": {
+      "problemId": "swap-numbers",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-09-30",
+      "requeueCount": 0
+    },
+    "toggle-count": {
+      "problemId": "toggle-count",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-01",
+      "requeueCount": 0
+    },
+    "odd-occurring-element": {
+      "problemId": "odd-occurring-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-01",
+      "requeueCount": 0
+    },
+    "odd-occurring-element-ii": {
+      "problemId": "odd-occurring-element-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-01",
+      "requeueCount": 0
+    },
+    "duplicate-element": {
+      "problemId": "duplicate-element",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-01",
+      "requeueCount": 0
+    },
+    "missing-and-duplicated-elements": {
+      "problemId": "missing-and-duplicated-elements",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-01",
+      "requeueCount": 0
+    },
+    "pairwise-bits-swap": {
+      "problemId": "pairwise-bits-swap",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-01",
+      "requeueCount": 0
+    },
+    "unique-subsets-2": {
+      "problemId": "unique-subsets-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-02",
+      "requeueCount": 0
+    },
+    "parity-checker": {
+      "problemId": "parity-checker",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-02",
+      "requeueCount": 0
+    },
+    "power-of-2": {
+      "problemId": "power-of-2",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-02",
+      "requeueCount": 0
+    },
+    "parity-checker-ii": {
+      "problemId": "parity-checker-ii",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-02",
+      "requeueCount": 0
+    },
+    "power-function": {
+      "problemId": "power-function",
+      "status": "not-started",
+      "notes": "",
+      "lastUpdated": "2026-07-08T18:02:08.672Z",
+      "scheduledDate": "2026-10-02",
+      "requeueCount": 0
+    }
+  },
+  "generatedAt": "2026-07-08T18:02:08.670Z"
+}
