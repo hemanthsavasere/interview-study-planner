@@ -28,7 +28,7 @@ export function generateSchedule(
 ): ScheduleResult {
   const today = new Date(); today.setHours(0, 0, 0, 0)
   const deadline = new Date(config.deadline + 'T00:00:00')
-  if (deadline <= today) throw new Error('deadline must be future')
+  if (deadline < today) throw new Error('deadline must be future')
   if (config.hoursPerDay < 0.5) throw new Error('hoursPerDay must be at least 0.5')
 
   const dayBudget = config.hoursPerDay * 60
@@ -53,10 +53,11 @@ export function generateSchedule(
     warnings.push(`Not enough time: ${totalMin} min needed, ${days * dayBudget} min available`)
   }
 
+  const problemIds = new Set(problems.map(p => p.id))
   const assignments: Record<string, string> = {}
   if (existingProgress) {
     for (const [id, p] of Object.entries(existingProgress)) {
-      if (p.scheduledDate) assignments[id] = p.scheduledDate
+      if (p.scheduledDate && problemIds.has(id)) assignments[id] = p.scheduledDate
     }
   }
 
