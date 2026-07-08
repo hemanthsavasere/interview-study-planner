@@ -16,7 +16,7 @@ export function processRequeue(
   const hasUnsolved = Object.values(progress).some(
     p => p.status === 'not-started' || p.status === 'attempted',
   ) || problems.some(p => !progress[p.id])
-  const useDaily = deadlinePassed && !hasUnsolved
+  const useDaily = !hasUnsolved
 
   const out = { ...progress }
   for (const p of Object.values(out)) {

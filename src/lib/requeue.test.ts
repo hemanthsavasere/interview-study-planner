@@ -12,7 +12,7 @@ const solved = (id: string, lastUpdated: string, requeueDate?: string): ProblemP
 describe('requeue', () => {
   it('schedules solved-not-confident to next weekend >=7d out', () => {
     const today = '2099-01-15' // Friday
-    const r = processRequeue({ a: solved('a', '2099-01-08') }, [prob('a')], cfg, today)
+    const r = processRequeue({ a: solved('a', '2099-01-08'), b: { problemId: 'b', status: 'not-started', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2099-01-01' } }, [prob('a'), prob('b')], cfg, today)
     expect(r.a.requeueDate).toBeTruthy()
     expect(r.a.requeueCount).toBe(1)
     const d = new Date(r.a.requeueDate + 'T00:00:00')
