@@ -8,7 +8,7 @@ import { SettingsView } from './components/SettingsView'
 const problems = parseProblems(csv)
 
 export default function App() {
-  const store = useStore()
+  const store = useStore(problems)
   const [tab, setTab] = useState<'today' | 'calendar' | 'topics' | 'notes' | 'settings'>('today')
   const solved = Object.values(store.state.progress).filter(p => p.status === 'solved' || p.status === 'confident').length
 
