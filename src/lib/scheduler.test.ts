@@ -28,10 +28,10 @@ describe('scheduler', () => {
     const { assignments } = generateSchedule(probs, cfg('2099-01-31', 2))
     expect(assignments.a === assignments.b).toBe(false)
   })
-  it('orders Easy before Medium before Hard before Fundamental', () => {
+  it('preserves CSV order (no re-sorting by difficulty)', () => {
     const probs = [mk('h', 'Hard'), mk('e', 'Easy'), mk('f', 'Fundamental'), mk('m', 'Medium')]
     const { assignments } = generateSchedule(probs, cfg('2099-01-31', 0.5))
-    expect(assignments.e < assignments.h).toBe(true)
+    expect(assignments.h <= assignments.e).toBe(true)
   })
   it('throws when deadline is in the past', () => {
     expect(() => generateSchedule([mk('a', 'Easy')], cfg('2000-01-01'))).toThrow(/future/)

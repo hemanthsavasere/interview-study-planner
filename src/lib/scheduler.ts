@@ -3,8 +3,6 @@ import type { Problem, ScheduleConfig, ProblemProgress, Difficulty } from '../ty
 export const DIFFICULTY_MINUTES: Record<Difficulty, number> = {
   Fundamental: 24, Easy: 30, Medium: 48, Hard: 69,
 }
-export const ORDER: Difficulty[] = ['Easy', 'Medium', 'Hard', 'Fundamental']
-
 export function totalStudyMinutes(problems: Problem[]): number {
   return problems.reduce((s, p) => s + DIFFICULTY_MINUTES[p.difficulty], 0)
 }
@@ -40,13 +38,7 @@ export function generateSchedule(
       .filter(([, p]) => p.status === 'solved' || p.status === 'confident')
       .map(([id]) => id),
   )
-  const toSchedule = problems
-    .filter(p => !solvedOrConfident.has(p.id))
-    .sort((a, b) => {
-      const da = ORDER.indexOf(a.difficulty), db = ORDER.indexOf(b.difficulty)
-      if (da !== db) return da - db
-      return a.section.localeCompare(b.section) || a.topic.localeCompare(b.topic)
-    })
+  const toSchedule = problems.filter(p => !solvedOrConfident.has(p.id))
 
   const totalMin = totalStudyMinutes(toSchedule)
   if (totalMin > days * dayBudget) {
