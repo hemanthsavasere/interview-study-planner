@@ -10,7 +10,7 @@ const solved = (id: string, lastUpdated: string, requeueDate?: string): ProblemP
 })
 
 describe('requeue', () => {
-  it('schedules solved-not-confident to next weekend >=7d out', () => {
+  it('schedules solved-not-confident to upcoming weekend', () => {
     const today = '2099-01-15' // Friday
     const r = processRequeue({ a: solved('a', '2099-01-08'), b: { problemId: 'b', status: 'not-started', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2099-01-01' } }, [prob('a'), prob('b')], cfg, today)
     expect(r.a.requeueDate).toBeTruthy()
@@ -19,7 +19,7 @@ describe('requeue', () => {
     expect(d.getDay() === 6 || d.getDay() === 0).toBe(true)
     expect(r.a.requeueDate >= '2099-01-15').toBe(true)
   })
-  it('past requeueDate -> reschedule +7d, increment', () => {
+  it('past requeueDate -> reschedule to upcoming weekend, increment', () => {
     const today = '2099-02-01'
     const r = processRequeue({ a: solved('a', '2099-01-01', '2099-01-10') }, [prob('a')], cfg, today)
     expect(r.a.requeueCount).toBe(1)
@@ -32,6 +32,20 @@ describe('requeue', () => {
   it('not-started/attempted excluded', () => {
     const r = processRequeue({ a: { ...solved('a', '2099-01-01'), status: 'attempted' } }, [prob('a')], cfg, '2099-02-01')
     expect(r.a.requeueDate).toBeUndefined()
+  })
+  it('solved mid-week lands on this coming Saturday', () => {
+    // 2099-01-21 is a Wednesday (1-17=Sat, so 1-18=Sun, 1-19=Mon, 1-20=Tue, 1-21=Wed)
+    const today = '2099-01-21'
+    expect(new Date(today + 'T12:00:00').getDay()).toBe(3)
+    const r = processRequeue(
+      { a: solved('a', '2099-01-21'), b: { problemId: 'b', status: 'not-started', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2099-01-01' } },
+      [prob('a'), prob('b')],
+      cfg,
+      today,
+    )
+    expect(r.a.requeueDate).toBe('2099-01-24')
+    expect(r.a.requeueCount).toBe(1)
+    expect(new Date(r.a.requeueDate + 'T12:00:00').getDay()).toBe(6)
   })
   it('missed review (weekly cadence) lands on a weekend >= today', () => {
     const today = '2099-01-13'

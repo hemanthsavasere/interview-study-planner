@@ -39,7 +39,7 @@ export function processRequeue(
     if (useDaily) {
       date = nextReviewDay(today)
     } else {
-      date = addDays(p.lastUpdated.slice(0, 10), 7)
+      date = p.lastUpdated.slice(0, 10)
       while (dayOf(date) !== 6 && dayOf(date) !== 0) date = addDays(date, 1)
       if (date <= today) date = nextReviewDay(today)
     }
