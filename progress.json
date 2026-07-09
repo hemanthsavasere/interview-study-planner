@@ -10,7 +10,7 @@
       "problemId": "flip-characters",
       "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:24.778Z",
+      "lastUpdated": "2026-07-09T07:26:43.417Z",
       "scheduledDate": "2026-07-08",
       "requeueCount": 0
     },
@@ -36,8 +36,7 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:45:56.735Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-11"
+      "requeueCount": 1
     },
     "reverse-segments": {
       "problemId": "reverse-segments",
@@ -67,11 +66,12 @@
     },
     "target-limited-two-sum": {
       "problemId": "target-limited-two-sum",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-09T07:29:52.641Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 0
+      "requeueCount": 3,
+      "requeueDate": "2026-07-11"
     },
     "duplicate-aware-two-sum": {
       "problemId": "duplicate-aware-two-sum",
@@ -83,17 +83,17 @@
     },
     "largest-container": {
       "problemId": "largest-container",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-09T03:42:05.915Z",
       "scheduledDate": "2026-07-09",
       "requeueCount": 0
     },
     "k-rotations": {
       "problemId": "k-rotations",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-09T04:54:51.119Z",
       "scheduledDate": "2026-07-09",
       "requeueCount": 0
     },
@@ -101,9 +101,9 @@
       "problemId": "three-sum",
       "status": "not-started",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-09T05:10:01.700Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 0
+      "requeueCount": 2
     },
     "approximate-three-sum": {
       "problemId": "approximate-three-sum",
@@ -291,17 +291,17 @@
     },
     "row-major-traversal": {
       "problemId": "row-major-traversal",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-09T07:26:30.825Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
     "column-major-traversal": {
       "problemId": "column-major-traversal",
-      "status": "not-started",
-      "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "status": "confident",
+      "notes": "## Row-major vs column-major Traversal\n\n### Row-major\n\nRead left to right, row by row:\n\n```java\nfor(int row = 0; row < matrix.length; row++){\n    for(int col = 0; col < matrix[0].length; col++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n### Column-major\n\nRead top to bottom, column by column:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\nThe only difference is **which loop comes first**.\n\n---\n\n## Final mental template\n\n```java\nfor each column:\n    for each row:\n        visit matrix[row][column]\n```\n\nIn Java:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n## Memory hook\n\n**Column-major = column first, then rows.**\n\nOr even simpler:\n\n> **“Pick a column, walk down the rows.”**\n\nSo remember:\n\n```java\nouter loop = column\ninner loop = row\nmatrix[row][column]\n```\n\nThat is the core pattern.\n",
+      "lastUpdated": "2026-07-09T07:27:55.493Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
