@@ -30,7 +30,7 @@ export function TodayView({ problems, store }: { problems: Problem[]; store: Ret
 
   const weekEnd = addDaysISO(realToday, 7)
   const upcoming = Object.values(store.state.progress).filter(p =>
-    p.requeueDate && p.requeueDate >= realToday && p.requeueDate <= weekEnd).length
+    p.status === 'solved' && p.requeueDate && p.requeueDate >= realToday && p.requeueDate <= weekEnd).length
 
   return (
     <div className="space-y-6">

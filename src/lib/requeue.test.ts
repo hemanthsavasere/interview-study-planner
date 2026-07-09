@@ -33,6 +33,14 @@ describe('requeue', () => {
     const r = processRequeue({ a: { ...solved('a', '2099-01-01'), status: 'attempted' } }, [prob('a')], cfg, '2099-02-01')
     expect(r.a.requeueDate).toBeUndefined()
   })
+  it('clears stale requeueDate when status changed from solved to confident', () => {
+    const today = '2099-02-01'
+    const r = processRequeue({ a: solved('a', '2099-01-01', '2099-01-27') }, [prob('a')], cfg, today)
+    expect(r.a.requeueDate).toBeDefined()
+    r.a = { ...r.a, status: 'confident' }
+    const r2 = processRequeue({ a: r.a }, [prob('a')], cfg, today)
+    expect(r2.a.requeueDate).toBeUndefined()
+  })
   it('solved mid-week lands on this coming Saturday', () => {
     // 2099-01-21 is a Wednesday (1-17=Sat, so 1-18=Sun, 1-19=Mon, 1-20=Tue, 1-21=Wed)
     const today = '2099-01-21'

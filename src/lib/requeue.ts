@@ -32,7 +32,12 @@ export function processRequeue(
 
   const out = { ...progress }
   for (const p of Object.values(out)) {
-    if (p.status !== 'solved') continue
+    if (p.status !== 'solved') {
+      if (p.requeueDate !== undefined) {
+        out[p.problemId] = { ...p, requeueDate: undefined }
+      }
+      continue
+    }
     const due = !p.requeueDate || p.requeueDate <= today
     if (!due) continue
     let date: string
