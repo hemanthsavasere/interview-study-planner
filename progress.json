@@ -75,11 +75,11 @@
     },
     "duplicate-aware-two-sum": {
       "problemId": "duplicate-aware-two-sum",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-10T18:24:21.176Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 0
+      "requeueCount": 1
     },
     "largest-container": {
       "problemId": "largest-container",
