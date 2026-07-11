@@ -115,11 +115,12 @@
     },
     "four-sum": {
       "problemId": "four-sum",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-11T15:09:20.439Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 0
+      "requeueCount": 2,
+      "requeueDate": "2026-07-18"
     },
     "subsequence-checker": {
       "problemId": "subsequence-checker",
@@ -300,7 +301,7 @@
     "column-major-traversal": {
       "problemId": "column-major-traversal",
       "status": "confident",
-      "notes": "## Row-major vs column-major Traversal\n\n### Row-major\n\nRead left to right, row by row:\n\n```java\nfor(int row = 0; row < matrix.length; row++){\n    for(int col = 0; col < matrix[0].length; col++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n### Column-major\n\nRead top to bottom, column by column:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\nThe only difference is **which loop comes first**.\n\n---\n\n## Final mental template\n\n```java\nfor each column:\n    for each row:\n        visit matrix[row][column]\n```\n\nIn Java:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n## Memory hook\n\n**Column-major = column first, then rows.**\n\nOr even simpler:\n\n> **“Pick a column, walk down the rows.”**\n\nSo remember:\n\n```java\nouter loop = column\ninner loop = row\nmatrix[row][column]\n```\n\nThat is the core pattern.\n",
+      "notes": "## Row-major vs column-major Traversal\n\n### Row-major\n\nRead left to right, row by row:\n\n```java\nfor(int row = 0; row < matrix.length; row++){\n    for(int col = 0; col < matrix[0].length; col++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n### Column-major\n\nRead top to bottom, column by column:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\nThe only difference is **which loop comes first**.\n\n---\n\n## Final mental template\n\n```java\nfor each column:\n    for each row:\n        visit matrix[row][column]\n```\n\nIn Java:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n## Memory hook\n\n**Column-major = column first, then rows.**\n\nOr even simpler:\n\n> **\u201cPick a column, walk down the rows.\u201d**\n\nSo remember:\n\n```java\nouter loop = column\ninner loop = row\nmatrix[row][column]\n```\n\nThat is the core pattern.\n",
       "lastUpdated": "2026-07-09T07:27:55.493Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
