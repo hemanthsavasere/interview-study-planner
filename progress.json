@@ -53,8 +53,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:45:58.125Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-11"
+      "requeueCount": 3,
+      "requeueDate": "2026-07-18"
     },
     "two-sum": {
       "problemId": "two-sum",
