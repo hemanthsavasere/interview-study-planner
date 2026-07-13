@@ -156,9 +156,9 @@
     },
     "subarray-size-equals-k": {
       "problemId": "subarray-size-equals-k",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T04:35:34.063Z",
       "scheduledDate": "2026-07-11",
       "requeueCount": 0
     },
