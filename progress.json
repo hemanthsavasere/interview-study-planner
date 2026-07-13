@@ -148,9 +148,9 @@
     },
     "repeated-intersections": {
       "problemId": "repeated-intersections",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T04:28:16.309Z",
       "scheduledDate": "2026-07-10",
       "requeueCount": 0
     },
