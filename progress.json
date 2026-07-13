@@ -180,9 +180,9 @@
     },
     "even-odd-count": {
       "problemId": "even-odd-count",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T14:26:04.754Z",
       "scheduledDate": "2026-07-11",
       "requeueCount": 0
     },
