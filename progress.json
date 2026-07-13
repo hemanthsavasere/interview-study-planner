@@ -44,8 +44,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:02:32.289Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-11"
+      "requeueCount": 3,
+      "requeueDate": "2026-07-18"
     },
     "reverse-word-order": {
       "problemId": "reverse-word-order",
@@ -53,8 +53,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:45:58.125Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-11"
+      "requeueCount": 3,
+      "requeueDate": "2026-07-18"
     },
     "two-sum": {
       "problemId": "two-sum",
@@ -70,8 +70,8 @@
       "notes": "",
       "lastUpdated": "2026-07-09T07:29:52.641Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-11"
+      "requeueCount": 5,
+      "requeueDate": "2026-07-18"
     },
     "duplicate-aware-two-sum": {
       "problemId": "duplicate-aware-two-sum",
