@@ -126,65 +126,66 @@
     },
     "subsequence-checker": {
       "problemId": "subsequence-checker",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T03:59:07.033Z",
       "scheduledDate": "2026-07-10",
       "requeueCount": 0
     },
     "merge-sorted-arrays": {
       "problemId": "merge-sorted-arrays",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T03:59:54.421Z",
       "scheduledDate": "2026-07-10",
       "requeueCount": 0
     },
     "unique-intersections": {
       "problemId": "unique-intersections",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T04:27:50.514Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-07-18"
     },
     "repeated-intersections": {
       "problemId": "repeated-intersections",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T04:28:16.309Z",
       "scheduledDate": "2026-07-10",
       "requeueCount": 0
     },
     "subarray-size-equals-k": {
       "problemId": "subarray-size-equals-k",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T04:35:34.063Z",
       "scheduledDate": "2026-07-11",
       "requeueCount": 0
     },
     "maximum-ones": {
       "problemId": "maximum-ones",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T14:08:39.458Z",
       "scheduledDate": "2026-07-11",
       "requeueCount": 0
     },
     "negative-window": {
       "problemId": "negative-window",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T14:20:55.288Z",
       "scheduledDate": "2026-07-11",
       "requeueCount": 0
     },
     "even-odd-count": {
       "problemId": "even-odd-count",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T14:26:04.754Z",
       "scheduledDate": "2026-07-11",
       "requeueCount": 0
     },
