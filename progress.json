@@ -139,11 +139,12 @@
     },
     "unique-intersections": {
       "problemId": "unique-intersections",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T04:27:50.514Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-07-18"
     },
     "repeated-intersections": {
       "problemId": "repeated-intersections",
