@@ -131,9 +131,9 @@
     },
     "merge-sorted-arrays": {
       "problemId": "merge-sorted-arrays",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-13T03:59:54.421Z",
       "scheduledDate": "2026-07-10",
       "requeueCount": 0
     },
