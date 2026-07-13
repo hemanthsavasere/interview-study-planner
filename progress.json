@@ -117,11 +117,12 @@
     },
     "four-sum": {
       "problemId": "four-sum",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-11T15:09:20.439Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 0
+      "requeueCount": 2,
+      "requeueDate": "2026-07-18"
     },
     "subsequence-checker": {
       "problemId": "subsequence-checker",
