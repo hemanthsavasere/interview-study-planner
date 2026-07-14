@@ -191,51 +191,53 @@
     },
     "consecutive-ones": {
       "problemId": "consecutive-ones",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T04:31:39.805Z",
       "scheduledDate": "2026-07-11",
       "requeueCount": 0
     },
     "product-conundrum": {
       "problemId": "product-conundrum",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T04:33:47.993Z",
       "scheduledDate": "2026-07-11",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-07-18"
     },
     "maximum-subarray-sum": {
       "problemId": "maximum-subarray-sum",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T11:28:00.295Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-07-18"
     },
     "consecutive-ones-with-k-flips": {
       "problemId": "consecutive-ones-with-k-flips",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T11:45:54.302Z",
       "scheduledDate": "2026-07-12",
       "requeueCount": 0
     },
     "verify-schedule": {
       "problemId": "verify-schedule",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T11:58:05.276Z",
       "scheduledDate": "2026-07-12",
       "requeueCount": 0
     },
     "overlap-reduction": {
       "problemId": "overlap-reduction",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T12:26:02.136Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 0
+      "requeueCount": 1
     },
     "employee-free-time": {
       "problemId": "employee-free-time",
