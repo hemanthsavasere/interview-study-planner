@@ -217,9 +217,9 @@
     },
     "consecutive-ones-with-k-flips": {
       "problemId": "consecutive-ones-with-k-flips",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T11:45:54.302Z",
       "scheduledDate": "2026-07-12",
       "requeueCount": 0
     },
