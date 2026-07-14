@@ -199,11 +199,12 @@
     },
     "product-conundrum": {
       "problemId": "product-conundrum",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T04:33:47.993Z",
       "scheduledDate": "2026-07-11",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-07-18"
     },
     "maximum-subarray-sum": {
       "problemId": "maximum-subarray-sum",
