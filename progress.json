@@ -225,9 +225,9 @@
     },
     "verify-schedule": {
       "problemId": "verify-schedule",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T11:58:05.276Z",
       "scheduledDate": "2026-07-12",
       "requeueCount": 0
     },
