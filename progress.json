@@ -233,11 +233,11 @@
     },
     "overlap-reduction": {
       "problemId": "overlap-reduction",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T12:26:02.136Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 0
+      "requeueCount": 1
     },
     "employee-free-time": {
       "problemId": "employee-free-time",
