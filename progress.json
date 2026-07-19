@@ -275,25 +275,26 @@
     },
     "busiest-interval": {
       "problemId": "busiest-interval",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-19T04:41:58.419Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 0
+      "requeueCount": 1
     },
     "peak-resource-requirement": {
       "problemId": "peak-resource-requirement",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-19T08:39:11.234Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-07-25"
     },
     "design-a-dynamic-array": {
       "problemId": "design-a-dynamic-array",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-19T14:33:22.395Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
