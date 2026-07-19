@@ -290,9 +290,9 @@
     },
     "design-a-dynamic-array": {
       "problemId": "design-a-dynamic-array",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-19T14:33:22.395Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
