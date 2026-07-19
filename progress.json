@@ -44,8 +44,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:02:32.289Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 5,
+      "requeueDate": "2026-07-25"
     },
     "reverse-word-order": {
       "problemId": "reverse-word-order",
@@ -53,8 +53,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:45:58.125Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 5,
+      "requeueDate": "2026-07-25"
     },
     "two-sum": {
       "problemId": "two-sum",
@@ -70,8 +70,8 @@
       "notes": "",
       "lastUpdated": "2026-07-09T07:29:52.641Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 5,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 7,
+      "requeueDate": "2026-07-25"
     },
     "duplicate-aware-two-sum": {
       "problemId": "duplicate-aware-two-sum",
@@ -103,8 +103,8 @@
       "notes": "",
       "lastUpdated": "2026-07-10T11:20:40.611Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 5,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 7,
+      "requeueDate": "2026-07-25"
     },
     "approximate-three-sum": {
       "problemId": "approximate-three-sum",
@@ -112,8 +112,8 @@
       "notes": "",
       "lastUpdated": "2026-07-10T17:50:13.580Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 5,
+      "requeueDate": "2026-07-25"
     },
     "four-sum": {
       "problemId": "four-sum",
@@ -121,8 +121,8 @@
       "notes": "",
       "lastUpdated": "2026-07-11T15:09:20.439Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 2,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 4,
+      "requeueDate": "2026-07-25"
     },
     "subsequence-checker": {
       "problemId": "subsequence-checker",
@@ -146,8 +146,8 @@
       "notes": "",
       "lastUpdated": "2026-07-13T04:27:50.514Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 3,
+      "requeueDate": "2026-07-25"
     },
     "repeated-intersections": {
       "problemId": "repeated-intersections",
@@ -203,8 +203,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T04:33:47.993Z",
       "scheduledDate": "2026-07-11",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 3,
+      "requeueDate": "2026-07-25"
     },
     "maximum-subarray-sum": {
       "problemId": "maximum-subarray-sum",
@@ -212,8 +212,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T11:28:00.295Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-18"
+      "requeueCount": 3,
+      "requeueDate": "2026-07-25"
     },
     "consecutive-ones-with-k-flips": {
       "problemId": "consecutive-ones-with-k-flips",
