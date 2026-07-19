@@ -241,11 +241,11 @@
     },
     "employee-free-time": {
       "problemId": "employee-free-time",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-14T20:20:08.928Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 0
+      "requeueCount": 1
     },
     "insert-interval": {
       "problemId": "insert-interval",
