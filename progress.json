@@ -258,19 +258,20 @@
     },
     "minimum-meeting-rooms": {
       "problemId": "minimum-meeting-rooms",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-18T02:36:24.999Z",
       "scheduledDate": "2026-07-13",
       "requeueCount": 0
     },
     "remove-intervals": {
       "problemId": "remove-intervals",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-18T10:51:31.047Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 0
+      "requeueCount": 2,
+      "requeueDate": "2026-07-25"
     },
     "busiest-interval": {
       "problemId": "busiest-interval",
