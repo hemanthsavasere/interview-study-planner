@@ -257,9 +257,9 @@
     },
     "minimum-meeting-rooms": {
       "problemId": "minimum-meeting-rooms",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-18T02:36:24.999Z",
       "scheduledDate": "2026-07-13",
       "requeueCount": 0
     },
