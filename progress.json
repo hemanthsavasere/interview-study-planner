@@ -281,11 +281,12 @@
     },
     "peak-resource-requirement": {
       "problemId": "peak-resource-requirement",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-19T08:39:11.234Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-07-25"
     },
     "design-a-dynamic-array": {
       "problemId": "design-a-dynamic-array",
