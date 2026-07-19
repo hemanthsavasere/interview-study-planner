@@ -41,9 +41,13 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
   }
 
   async function handleSync() {
-    const res = await syncToFiles(store.state, problems)
-    if (res.ok) toast.success('Synced to files')
-    else toast.error(res.error ?? 'Sync failed')
+    try {
+      const res = await syncToFiles(store.state, problems)
+      if (res.ok) toast.success('Synced to files')
+      else toast.error(res.error ?? 'Sync failed')
+    } catch (e) {
+      toast.error(e instanceof Error ? e.message : 'Sync failed')
+    }
   }
 
   async function handleImport() {
