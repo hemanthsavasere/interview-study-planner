@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "config": {
-    "deadline": "2026-10-19",
+    "deadline": "2027-11-01",
     "hoursPerDay": 4,
     "weekdaysOnly": true
   },
