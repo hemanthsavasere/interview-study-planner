@@ -316,33 +316,33 @@
     },
     "boundary-node": {
       "problemId": "boundary-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-21T07:16:17.511Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
     "node-expedition": {
       "problemId": "node-expedition",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-21T07:16:24.343Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
     "node-search": {
       "problemId": "node-search",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-21T07:16:41.132Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
     "length-of-the-list": {
       "problemId": "length-of-the-list",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-21T07:16:46.032Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
