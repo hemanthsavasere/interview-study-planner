@@ -340,9 +340,9 @@
     },
     "length-of-the-list": {
       "problemId": "length-of-the-list",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-21T07:16:46.032Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
     },
