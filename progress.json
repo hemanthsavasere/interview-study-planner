@@ -62,7 +62,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:46:41.986Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 0
+      "requeueCount": 10,
+      "requeueDate": "2026-08-08"
     },
     "target-limited-two-sum": {
       "problemId": "target-limited-two-sum",
