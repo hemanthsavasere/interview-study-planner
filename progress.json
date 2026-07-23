@@ -80,7 +80,8 @@
       "notes": "",
       "lastUpdated": "2026-07-10T18:24:21.176Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 1
+      "requeueCount": 10,
+      "requeueDate": "2026-08-08"
     },
     "largest-container": {
       "problemId": "largest-container",
