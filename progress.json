@@ -366,9 +366,9 @@
     },
     "insert-after-the-given-node": {
       "problemId": "insert-after-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-25T08:36:42.230Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
