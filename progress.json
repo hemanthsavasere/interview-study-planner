@@ -123,8 +123,8 @@
       "notes": "",
       "lastUpdated": "2026-07-11T15:09:20.439Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 4,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 7,
+      "requeueDate": "2026-08-08"
     },
     "subsequence-checker": {
       "problemId": "subsequence-checker",
