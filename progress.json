@@ -132,7 +132,8 @@
       "notes": "",
       "lastUpdated": "2026-07-13T03:59:07.033Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 0
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "merge-sorted-arrays": {
       "problemId": "merge-sorted-arrays",
