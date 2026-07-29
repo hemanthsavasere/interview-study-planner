@@ -216,8 +216,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T11:28:00.295Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "consecutive-ones-with-k-flips": {
       "problemId": "consecutive-ones-with-k-flips",
