@@ -420,11 +420,12 @@
     },
     "delete-nodes-with-given-data": {
       "problemId": "delete-nodes-with-given-data",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T03:28:46.151Z",
       "scheduledDate": "2026-07-15",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "delete-node-after-the-given-node": {
       "problemId": "delete-node-after-the-given-node",
