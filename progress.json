@@ -412,9 +412,9 @@
     },
     "delete-node-with-given-data": {
       "problemId": "delete-node-with-given-data",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T03:13:10.237Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
