@@ -429,9 +429,9 @@
     },
     "delete-node-after-the-given-node": {
       "problemId": "delete-node-after-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T04:13:53.401Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
