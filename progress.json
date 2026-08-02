@@ -396,9 +396,9 @@
     },
     "delete-first-node": {
       "problemId": "delete-first-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T02:59:36.693Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
