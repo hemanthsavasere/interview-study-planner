@@ -387,11 +387,12 @@
     },
     "insert-at-given-distance": {
       "problemId": "insert-at-given-distance",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T02:54:42.214Z",
       "scheduledDate": "2026-07-15",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "delete-first-node": {
       "problemId": "delete-first-node",
