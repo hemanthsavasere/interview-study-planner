@@ -404,9 +404,9 @@
     },
     "delete-last-node": {
       "problemId": "delete-last-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T02:59:56.593Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
