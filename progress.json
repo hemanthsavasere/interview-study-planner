@@ -445,9 +445,9 @@
     },
     "delete-the-given-node": {
       "problemId": "delete-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:15:35.309Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
