@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "config": {
-    "deadline": "2026-10-19",
-    "hoursPerDay": 4,
+    "deadline": "2027-11-01",
+    "hoursPerDay": 3,
     "weekdaysOnly": true
   },
   "progress": {
@@ -53,8 +53,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:45:58.125Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 5,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 8,
+      "requeueDate": "2026-08-08"
     },
     "two-sum": {
       "problemId": "two-sum",
@@ -62,7 +62,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:46:41.986Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 0
+      "requeueCount": 10,
+      "requeueDate": "2026-08-08"
     },
     "target-limited-two-sum": {
       "problemId": "target-limited-two-sum",
@@ -79,7 +80,8 @@
       "notes": "",
       "lastUpdated": "2026-07-10T18:24:21.176Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 1
+      "requeueCount": 10,
+      "requeueDate": "2026-08-08"
     },
     "largest-container": {
       "problemId": "largest-container",
@@ -112,8 +114,8 @@
       "notes": "",
       "lastUpdated": "2026-07-10T17:50:13.580Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 5,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 8,
+      "requeueDate": "2026-08-08"
     },
     "four-sum": {
       "problemId": "four-sum",
@@ -121,8 +123,8 @@
       "notes": "",
       "lastUpdated": "2026-07-11T15:09:20.439Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 4,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 7,
+      "requeueDate": "2026-08-08"
     },
     "subsequence-checker": {
       "problemId": "subsequence-checker",
@@ -130,7 +132,8 @@
       "notes": "",
       "lastUpdated": "2026-07-13T03:59:07.033Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 0
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "merge-sorted-arrays": {
       "problemId": "merge-sorted-arrays",
@@ -155,7 +158,8 @@
       "notes": "",
       "lastUpdated": "2026-07-13T04:28:16.309Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 0
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "subarray-size-equals-k": {
       "problemId": "subarray-size-equals-k",
@@ -212,8 +216,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T11:28:00.295Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "consecutive-ones-with-k-flips": {
       "problemId": "consecutive-ones-with-k-flips",
@@ -229,7 +233,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T11:58:05.276Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 0
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "overlap-reduction": {
       "problemId": "overlap-reduction",
@@ -262,7 +267,8 @@
       "notes": "",
       "lastUpdated": "2026-07-18T02:36:24.999Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 0
+      "requeueCount": 5,
+      "requeueDate": "2026-08-08"
     },
     "remove-intervals": {
       "problemId": "remove-intervals",
@@ -279,7 +285,8 @@
       "notes": "",
       "lastUpdated": "2026-07-19T04:41:58.419Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 1
+      "requeueCount": 4,
+      "requeueDate": "2026-08-08"
     },
     "peak-resource-requirement": {
       "problemId": "peak-resource-requirement",
@@ -348,129 +355,132 @@
     },
     "insert-at-beginning": {
       "problemId": "insert-at-beginning",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-25T08:25:36.886Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "insert-at-end": {
       "problemId": "insert-at-end",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-25T08:25:38.440Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "insert-after-the-given-node": {
       "problemId": "insert-after-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-25T08:36:42.230Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "insert-before-the-given-node": {
       "problemId": "insert-before-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-07-25T08:36:45.840Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "insert-at-given-distance": {
       "problemId": "insert-at-given-distance",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T02:54:42.214Z",
       "scheduledDate": "2026-07-15",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "delete-first-node": {
       "problemId": "delete-first-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T02:59:36.693Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "delete-last-node": {
       "problemId": "delete-last-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T02:59:56.593Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "delete-node-with-given-data": {
       "problemId": "delete-node-with-given-data",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T03:13:10.237Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "delete-nodes-with-given-data": {
       "problemId": "delete-nodes-with-given-data",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T03:28:46.151Z",
       "scheduledDate": "2026-07-15",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "delete-node-after-the-given-node": {
       "problemId": "delete-node-after-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-02T04:13:53.401Z",
       "scheduledDate": "2026-07-15",
       "requeueCount": 0
     },
     "delete-node-before-the-given-node": {
       "problemId": "delete-node-before-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:15:03.381Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
     "delete-the-given-node": {
       "problemId": "delete-the-given-node",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:15:35.309Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
     "delete-node-at-given-distance": {
       "problemId": "delete-node-at-given-distance",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:29:50.129Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
     "detect-cycle": {
       "problemId": "detect-cycle",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:33:03.988Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
     "remove-loop": {
       "problemId": "remove-loop",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:49:51.302Z",
       "scheduledDate": "2026-07-16",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "reverse-a-list": {
       "problemId": "reverse-a-list",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:33:06.752Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
@@ -3819,5 +3829,5 @@
       "requeueCount": 0
     }
   },
-  "generatedAt": "2026-07-08T18:02:08.670Z"
+  "generatedAt": "2026-08-02T02:43:32.747Z"
 }
