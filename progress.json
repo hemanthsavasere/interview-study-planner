@@ -469,11 +469,12 @@
     },
     "remove-loop": {
       "problemId": "remove-loop",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:49:51.302Z",
       "scheduledDate": "2026-07-16",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "reverse-a-list": {
       "problemId": "reverse-a-list",
