@@ -453,9 +453,9 @@
     },
     "delete-node-at-given-distance": {
       "problemId": "delete-node-at-given-distance",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:29:50.129Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
