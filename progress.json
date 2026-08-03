@@ -461,9 +461,9 @@
     },
     "detect-cycle": {
       "problemId": "detect-cycle",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-03T17:33:03.988Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
