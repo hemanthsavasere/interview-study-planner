@@ -44,8 +44,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:02:32.289Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 5,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 8,
+      "requeueDate": "2026-08-08"
     },
     "reverse-word-order": {
       "problemId": "reverse-word-order",
