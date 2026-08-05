@@ -207,8 +207,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T04:33:47.993Z",
       "scheduledDate": "2026-07-11",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "maximum-subarray-sum": {
       "problemId": "maximum-subarray-sum",
