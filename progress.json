@@ -265,8 +265,7 @@
       "notes": "",
       "lastUpdated": "2026-07-18T02:36:24.999Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 5,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "remove-intervals": {
       "problemId": "remove-intervals",
