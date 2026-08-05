@@ -149,8 +149,8 @@
       "notes": "",
       "lastUpdated": "2026-07-13T04:27:50.514Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "repeated-intersections": {
       "problemId": "repeated-intersections",
