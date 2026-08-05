@@ -294,8 +294,8 @@
       "notes": "",
       "lastUpdated": "2026-07-19T08:39:11.234Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 4,
+      "requeueDate": "2026-08-08"
     },
     "design-a-dynamic-array": {
       "problemId": "design-a-dynamic-array",
