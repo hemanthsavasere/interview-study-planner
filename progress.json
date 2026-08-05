@@ -511,11 +511,12 @@
     },
     "pairwise-swap": {
       "problemId": "pairwise-swap",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-04T04:02:10.947Z",
       "scheduledDate": "2026-07-17",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "reverse-k-segments": {
       "problemId": "reverse-k-segments",
