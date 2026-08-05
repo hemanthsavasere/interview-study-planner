@@ -285,7 +285,7 @@
       "notes": "",
       "lastUpdated": "2026-07-19T04:41:58.419Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 4,
+      "requeueCount": 1,
       "requeueDate": "2026-08-08"
     },
     "peak-resource-requirement": {
