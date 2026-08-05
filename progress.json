@@ -232,8 +232,7 @@
       "notes": "",
       "lastUpdated": "2026-07-14T11:58:05.276Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 6,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "overlap-reduction": {
       "problemId": "overlap-reduction",
