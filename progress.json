@@ -536,9 +536,9 @@
     },
     "reverse-alternate-segments": {
       "problemId": "reverse-alternate-segments",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-05T14:42:53.864Z",
       "scheduledDate": "2026-07-18",
       "requeueCount": 0
     },
