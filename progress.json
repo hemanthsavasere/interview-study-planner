@@ -105,8 +105,8 @@
       "notes": "",
       "lastUpdated": "2026-07-10T11:20:40.611Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 7,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 10,
+      "requeueDate": "2026-08-08"
     },
     "approximate-three-sum": {
       "problemId": "approximate-three-sum",
