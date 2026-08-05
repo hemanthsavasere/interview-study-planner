@@ -157,8 +157,7 @@
       "notes": "",
       "lastUpdated": "2026-07-13T04:28:16.309Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 6,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "subarray-size-equals-k": {
       "problemId": "subarray-size-equals-k",
