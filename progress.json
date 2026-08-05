@@ -520,9 +520,9 @@
     },
     "reverse-k-segments": {
       "problemId": "reverse-k-segments",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-05T14:29:20.883Z",
       "scheduledDate": "2026-07-17",
       "requeueCount": 0
     },
