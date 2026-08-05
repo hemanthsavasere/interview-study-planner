@@ -44,8 +44,8 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:02:32.289Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 5,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 8,
+      "requeueDate": "2026-08-08"
     },
     "reverse-word-order": {
       "problemId": "reverse-word-order",
@@ -62,8 +62,7 @@
       "notes": "",
       "lastUpdated": "2026-07-08T18:46:41.986Z",
       "scheduledDate": "2026-07-08",
-      "requeueCount": 10,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "target-limited-two-sum": {
       "problemId": "target-limited-two-sum",
@@ -71,8 +70,8 @@
       "notes": "",
       "lastUpdated": "2026-07-09T07:29:52.641Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 7,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 10,
+      "requeueDate": "2026-08-08"
     },
     "duplicate-aware-two-sum": {
       "problemId": "duplicate-aware-two-sum",
@@ -80,7 +79,7 @@
       "notes": "",
       "lastUpdated": "2026-07-10T18:24:21.176Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 10,
+      "requeueCount": 1,
       "requeueDate": "2026-08-08"
     },
     "largest-container": {
@@ -105,8 +104,8 @@
       "notes": "",
       "lastUpdated": "2026-07-10T11:20:40.611Z",
       "scheduledDate": "2026-07-09",
-      "requeueCount": 7,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 10,
+      "requeueDate": "2026-08-08"
     },
     "approximate-three-sum": {
       "problemId": "approximate-three-sum",
@@ -132,8 +131,7 @@
       "notes": "",
       "lastUpdated": "2026-07-13T03:59:07.033Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 6,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "merge-sorted-arrays": {
       "problemId": "merge-sorted-arrays",
@@ -149,8 +147,8 @@
       "notes": "",
       "lastUpdated": "2026-07-13T04:27:50.514Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "repeated-intersections": {
       "problemId": "repeated-intersections",
@@ -158,8 +156,7 @@
       "notes": "",
       "lastUpdated": "2026-07-13T04:28:16.309Z",
       "scheduledDate": "2026-07-10",
-      "requeueCount": 6,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "subarray-size-equals-k": {
       "problemId": "subarray-size-equals-k",
@@ -207,8 +204,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T04:33:47.993Z",
       "scheduledDate": "2026-07-11",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "maximum-subarray-sum": {
       "problemId": "maximum-subarray-sum",
@@ -233,8 +230,7 @@
       "notes": "",
       "lastUpdated": "2026-07-14T11:58:05.276Z",
       "scheduledDate": "2026-07-12",
-      "requeueCount": 6,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "overlap-reduction": {
       "problemId": "overlap-reduction",
@@ -258,8 +254,8 @@
       "notes": "",
       "lastUpdated": "2026-07-14T20:20:03.415Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 3,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 6,
+      "requeueDate": "2026-08-08"
     },
     "minimum-meeting-rooms": {
       "problemId": "minimum-meeting-rooms",
@@ -267,8 +263,7 @@
       "notes": "",
       "lastUpdated": "2026-07-18T02:36:24.999Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 5,
-      "requeueDate": "2026-08-08"
+      "requeueCount": 0
     },
     "remove-intervals": {
       "problemId": "remove-intervals",
@@ -276,8 +271,8 @@
       "notes": "",
       "lastUpdated": "2026-07-18T10:51:31.047Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 2,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 5,
+      "requeueDate": "2026-08-08"
     },
     "busiest-interval": {
       "problemId": "busiest-interval",
@@ -285,7 +280,7 @@
       "notes": "",
       "lastUpdated": "2026-07-19T04:41:58.419Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 4,
+      "requeueCount": 1,
       "requeueDate": "2026-08-08"
     },
     "peak-resource-requirement": {
@@ -294,8 +289,8 @@
       "notes": "",
       "lastUpdated": "2026-07-19T08:39:11.234Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 1,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 4,
+      "requeueDate": "2026-08-08"
     },
     "design-a-dynamic-array": {
       "problemId": "design-a-dynamic-array",
@@ -316,7 +311,7 @@
     "column-major-traversal": {
       "problemId": "column-major-traversal",
       "status": "confident",
-      "notes": "## Row-major vs column-major Traversal\n\n### Row-major\n\nRead left to right, row by row:\n\n```java\nfor(int row = 0; row < matrix.length; row++){\n    for(int col = 0; col < matrix[0].length; col++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n### Column-major\n\nRead top to bottom, column by column:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\nThe only difference is **which loop comes first**.\n\n---\n\n## Final mental template\n\n```java\nfor each column:\n    for each row:\n        visit matrix[row][column]\n```\n\nIn Java:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n## Memory hook\n\n**Column-major = column first, then rows.**\n\nOr even simpler:\n\n> **\u201cPick a column, walk down the rows.\u201d**\n\nSo remember:\n\n```java\nouter loop = column\ninner loop = row\nmatrix[row][column]\n```\n\nThat is the core pattern.\n",
+      "notes": "## Row-major vs column-major Traversal\n\n### Row-major\n\nRead left to right, row by row:\n\n```java\nfor(int row = 0; row < matrix.length; row++){\n    for(int col = 0; col < matrix[0].length; col++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n### Column-major\n\nRead top to bottom, column by column:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\nThe only difference is **which loop comes first**.\n\n---\n\n## Final mental template\n\n```java\nfor each column:\n    for each row:\n        visit matrix[row][column]\n```\n\nIn Java:\n\n```java\nfor(int col = 0; col < matrix[0].length; col++){\n    for(int row = 0; row < matrix.length; row++){\n        result[index++] = matrix[row][col];\n    }\n}\n```\n\n## Memory hook\n\n**Column-major = column first, then rows.**\n\nOr even simpler:\n\n> **“Pick a column, walk down the rows.”**\n\nSo remember:\n\n```java\nouter loop = column\ninner loop = row\nmatrix[row][column]\n```\n\nThat is the core pattern.\n",
       "lastUpdated": "2026-07-09T07:27:55.493Z",
       "scheduledDate": "2026-07-14",
       "requeueCount": 0
@@ -486,41 +481,43 @@
     },
     "reverse-first-k-nodes": {
       "problemId": "reverse-first-k-nodes",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-04T02:55:35.487Z",
       "scheduledDate": "2026-07-16",
       "requeueCount": 0
     },
     "reverse-last-k-nodes": {
       "problemId": "reverse-last-k-nodes",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-04T03:05:53.195Z",
       "scheduledDate": "2026-07-17",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "reverse-the-given-segment": {
       "problemId": "reverse-the-given-segment",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-04T03:24:25.481Z",
       "scheduledDate": "2026-07-17",
       "requeueCount": 0
     },
     "pairwise-swap": {
       "problemId": "pairwise-swap",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-04T04:02:10.947Z",
       "scheduledDate": "2026-07-17",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "reverse-k-segments": {
       "problemId": "reverse-k-segments",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-05T14:29:20.883Z",
       "scheduledDate": "2026-07-17",
       "requeueCount": 0
     },
@@ -534,9 +531,9 @@
     },
     "reverse-alternate-segments": {
       "problemId": "reverse-alternate-segments",
-      "status": "not-started",
+      "status": "confident",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-05T14:42:53.864Z",
       "scheduledDate": "2026-07-18",
       "requeueCount": 0
     },
