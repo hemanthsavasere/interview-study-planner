@@ -276,8 +276,8 @@
       "notes": "",
       "lastUpdated": "2026-07-18T10:51:31.047Z",
       "scheduledDate": "2026-07-13",
-      "requeueCount": 2,
-      "requeueDate": "2026-07-25"
+      "requeueCount": 5,
+      "requeueDate": "2026-08-08"
     },
     "busiest-interval": {
       "problemId": "busiest-interval",
