@@ -494,11 +494,12 @@
     },
     "reverse-last-k-nodes": {
       "problemId": "reverse-last-k-nodes",
-      "status": "not-started",
+      "status": "solved",
       "notes": "",
-      "lastUpdated": "2026-07-08T18:02:08.671Z",
+      "lastUpdated": "2026-08-04T03:05:53.195Z",
       "scheduledDate": "2026-07-17",
-      "requeueCount": 0
+      "requeueCount": 1,
+      "requeueDate": "2026-08-08"
     },
     "reverse-the-given-segment": {
       "problemId": "reverse-the-given-segment",
