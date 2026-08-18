@@ -8,11 +8,13 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription } from './ui/dialog'
 import { toast } from 'sonner'
 import { generateSchedule } from '../lib/scheduler'
+import { todayISO } from '../lib/date'
 import { syncToFiles, loadFromFiles } from '../lib/sync'
 import type { Problem, AppState } from '../types'
 
 export function SettingsView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
   const [deadline, setDeadline] = useState(store.state.config.deadline)
+  const [startDate, setStartDate] = useState(store.state.config.startDate || todayISO())
   const [hours, setHours] = useState(String(store.state.config.hoursPerDay))
   const [weekdays, setWeekdays] = useState(store.state.config.weekdaysOnly)
   const [err, setErr] = useState('')
@@ -28,7 +30,7 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
       const h = Number(hours)
       if (!isFinite(h) || h < 0.5) { setErr('Hours must be at least 0.5'); return }
       if (!deadline) { setErr('Please set a deadline'); return }
-      const cfg = { deadline, hoursPerDay: h, weekdaysOnly: weekdays }
+      const cfg = { deadline, startDate, hoursPerDay: h, weekdaysOnly: weekdays }
       const { assignments, warnings } = generateSchedule(problems, cfg, regen ? store.state.progress : undefined)
       store.setConfig(cfg)
       store.applyAssignments(assignments, new Date().toISOString())
@@ -71,6 +73,10 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
           <CardDescription>Set your deadline and study pace.</CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4">
+          <div className="grid gap-1.5">
+            <Label htmlFor="startDate">Start date</Label>
+            <Input id="startDate" type="date" value={startDate} onChange={e => setStartDate(e.target.value)} />
+          </div>
           <div className="grid gap-1.5">
             <Label htmlFor="deadline">Deadline</Label>
             <Input id="deadline" type="date" value={deadline} onChange={e => setDeadline(e.target.value)} />

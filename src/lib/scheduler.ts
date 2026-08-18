@@ -1,5 +1,5 @@
 import type { Problem, ScheduleConfig, ProblemProgress, Difficulty } from '../types'
-import { localISODate } from './date'
+import { addDaysISO, todayISO } from './date'
 
 export const DIFFICULTY_MINUTES: Record<Difficulty, number> = {
   Fundamental: 24, Easy: 30, Medium: 48, Hard: 69,
@@ -13,25 +13,22 @@ export interface ScheduleResult {
   warnings: string[]
 }
 
-function isoDate(d: Date): string {
-  return localISODate(d)
-}
-function addDays(d: Date, n: number): Date {
-  const r = new Date(d); r.setDate(r.getDate() + n); return r
-}
-
 export function generateSchedule(
   problems: Problem[],
   config: ScheduleConfig,
   existingProgress?: Record<string, ProblemProgress>,
 ): ScheduleResult {
   const today = new Date(); today.setHours(0, 0, 0, 0)
+  const startISO = config.startDate || todayISO()
+  const start = new Date(startISO + 'T00:00:00')
+  if (start < today) throw new Error('Start date cannot be before today')
   const deadline = new Date(config.deadline + 'T00:00:00')
-  if (deadline < today) throw new Error('deadline must be future')
+  if (deadline < today) throw new Error('Deadline must be in the future')
+  if (deadline <= start) throw new Error('Start date must be before the deadline')
   if (config.hoursPerDay < 0.5) throw new Error('hoursPerDay must be at least 0.5')
 
   const dayBudget = config.hoursPerDay * 60
-  const days = Math.floor((deadline.getTime() - today.getTime()) / 86400000) + 1
+  const days = Math.floor((deadline.getTime() - start.getTime()) / 86400000) + 1
 
   const warnings: string[] = []
   const solvedOrConfident = new Set(
@@ -59,7 +56,7 @@ export function generateSchedule(
   for (const p of toSchedule) {
     const m = DIFFICULTY_MINUTES[p.difficulty]
     if (used + m > dayBudget && dayIdx + 1 < days) { dayIdx++; used = 0 }
-    assignments[p.id] = isoDate(addDays(today, dayIdx))
+    assignments[p.id] = addDaysISO(startISO, dayIdx)
     used += m
   }
   return { assignments, warnings }

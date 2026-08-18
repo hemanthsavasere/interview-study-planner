@@ -11,6 +11,7 @@ export interface ProblemProgress {
 }
 export interface ScheduleConfig {
   deadline: string; hoursPerDay: number; weekdaysOnly: boolean
+  startDate?: string
 }
 export interface AppState {
   schemaVersion: number; config: ScheduleConfig
