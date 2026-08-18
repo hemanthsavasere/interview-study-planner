@@ -5,7 +5,7 @@ const KEY = 'isp-state'
 export function freshState(): AppState {
   return {
     schemaVersion: SCHEMA_VERSION,
-    config: { deadline: '', hoursPerDay: 2, weekdaysOnly: true },
+    config: { deadline: '', hoursPerDay: 2, weekdaysOnly: true, startDate: '' },
     progress: {}, generatedAt: '',
   }
 }
