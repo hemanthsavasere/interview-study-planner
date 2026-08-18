@@ -23,6 +23,7 @@ export function generateSchedule(
   const start = new Date(startISO + 'T00:00:00')
   if (start < today) throw new Error('Start date cannot be before today')
   const deadline = new Date(config.deadline + 'T00:00:00')
+  if (deadline < today) throw new Error('Deadline must be in the future')
   if (deadline <= start) throw new Error('Start date must be before the deadline')
   if (config.hoursPerDay < 0.5) throw new Error('hoursPerDay must be at least 0.5')
 

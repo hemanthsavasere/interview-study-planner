@@ -54,9 +54,9 @@ describe('scheduler', () => {
     expect(() => generateSchedule([mk('a', 'Easy')], cfg('2099-02-10', 2, '2099-03-10')))
       .toThrow(/before the deadline/)
   })
-  it('throws when deadline is in the past relative to start', () => {
+  it('throws when deadline is in the past', () => {
     expect(() => generateSchedule([mk('a', 'Easy')], cfg('2000-01-01', 2, '2099-01-01')))
-      .toThrow(/before the deadline/)
+      .toThrow(/in the future/)
   })
   it('throws when hoursPerDay < 0.5', () => {
     expect(() => generateSchedule([mk('a', 'Easy')], cfg('2099-01-31', 0))).toThrow(/0.5/)
