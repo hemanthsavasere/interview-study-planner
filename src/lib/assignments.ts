@@ -1,5 +1,9 @@
 import type { ProblemProgress } from '../types'
 
+export function isActiveAssignment(progress: ProblemProgress): boolean {
+  return progress.status === 'not-started' || progress.status === 'attempted'
+}
+
 export function applyAssignments(
   progress: Record<string, ProblemProgress>,
   assignments: Record<string, string>,

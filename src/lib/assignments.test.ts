@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { applyAssignments } from './assignments'
+import { applyAssignments, isActiveAssignment } from './assignments'
 import type { ProblemProgress } from '../types'
 
 const solved = (id: string, scheduledDate: string, notes = ''): ProblemProgress => ({
@@ -60,5 +60,18 @@ describe('applyAssignments', () => {
   it('keeps generatedAt', () => {
     const { generatedAt } = applyAssignments({}, {}, '2099-06-01T00:00:00Z')
     expect(generatedAt).toBe('2099-06-01T00:00:00Z')
+  })
+})
+
+describe('isActiveAssignment', () => {
+  it.each([
+    ['not-started', true],
+    ['attempted', true],
+    ['solved', false],
+    ['confident', false],
+  ] as const)('treats %s as active: %s', (status, expected) => {
+    expect(isActiveAssignment({
+      problemId: 'a', status, notes: '', lastUpdated: '2099-01-01', scheduledDate: '2099-01-01', requeueCount: 0,
+    })).toBe(expected)
   })
 })

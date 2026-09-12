@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { ChevronLeft, ChevronRight, Check, ExternalLink } from 'lucide-react'
+import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react'
 import type { Difficulty, Problem, ProblemProgress } from '../types'
 import { Button } from './ui/button'
 import { Badge } from './ui/badge'
@@ -7,6 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog'
 import { Card, CardContent } from './ui/card'
 import { difficultyClass, difficultyBgClass, STATUS_LABEL } from '../lib/badges'
 import { todayISO } from '../lib/date'
+import { isActiveAssignment } from '../lib/assignments'
 
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
@@ -32,7 +33,7 @@ export function CalendarView({ problems, store }: {
     const sMap: Record<string, ProblemProgress[]> = {}
     const rMap: Record<string, ProblemProgress[]> = {}
     for (const p of Object.values(store.state.progress)) {
-      if (p.scheduledDate) (sMap[p.scheduledDate] ??= []).push(p)
+      if (p.scheduledDate && isActiveAssignment(p)) (sMap[p.scheduledDate] ??= []).push(p)
       if (p.requeueDate) (rMap[p.requeueDate] ??= []).push(p)
     }
     return { scheduledMap: sMap, requeueMap: rMap }
@@ -93,7 +94,6 @@ export function CalendarView({ problems, store }: {
           const key = dateKey(day)
           const scheduled = scheduledMap[key] ?? []
           const requeue = requeueMap[key] ?? []
-          const allSolved = scheduled.length > 0 && scheduled.every(p => p.status === 'solved' || p.status === 'confident')
           const diffs = [...new Set(scheduled.map(p => byId.get(p.problemId)?.difficulty).filter((d): d is Difficulty => d != null))]
           const weekday = i % 7
           const isWeekend = weekday === 0 || weekday === 6
@@ -109,7 +109,6 @@ export function CalendarView({ problems, store }: {
                 'aspect-square rounded-lg border p-1 flex flex-col items-center justify-start text-sm transition-colors',
                 isWeekend ? 'bg-muted/30' : '',
                 isToday ? 'ring-2 ring-primary' : '',
-                allSolved ? 'bg-primary/10' : '',
                 isSelected ? 'border-primary bg-accent' : 'hover:bg-accent',
               ].join(' ')}
             >
@@ -122,7 +121,6 @@ export function CalendarView({ problems, store }: {
                   {diffs.map(d => <span key={d} className={`w-1.5 h-1.5 rounded-full ${difficultyBgClass(d)}`} />)}
                 </div>
               )}
-              {allSolved && <Check className="size-3 text-primary mt-0.5" />}
               {hasRequeue && <span className="text-[10px] text-muted-foreground mt-0.5">{requeue.length} review{requeue.length > 1 ? 's' : ''}</span>}
             </button>
           )

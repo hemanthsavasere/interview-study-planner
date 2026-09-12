@@ -11,6 +11,7 @@ import { generateSchedule } from '../lib/scheduler'
 import { todayISO } from '../lib/date'
 import { syncToFiles, loadFromFiles } from '../lib/sync'
 import { DEFAULT_REVIEWS_PER_DAY } from '../lib/requeue'
+import { isActiveAssignment } from '../lib/assignments'
 import type { Problem, AppState } from '../types'
 
 export function SettingsView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
@@ -23,7 +24,9 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
   const [warn, setWarn] = useState<string[] | null>(null)
   const [importedData, setImportedData] = useState<AppState | null>(null)
 
-  const scheduledCount = Object.values(store.state.progress).filter(p => p.scheduledDate).length
+  const scheduledCount = Object.values(store.state.progress).filter(
+    p => p.scheduledDate && isActiveAssignment(p),
+  ).length
   const solvedCount = Object.values(store.state.progress).filter(p => p.status === 'solved' || p.status === 'confident').length
 
   function run(regen: boolean) {
@@ -35,8 +38,10 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
       const reviewsPerDayValue = Number(reviewsPerDay)
       if (!Number.isInteger(reviewsPerDayValue) || reviewsPerDayValue < 1) { setErr('Reviews per day must be a whole number of at least 1'); return }
       const cfg = { deadline, startDate, hoursPerDay: h, weekdaysOnly: weekdays, reviewsPerDay: reviewsPerDayValue }
-      const { assignments, warnings } = generateSchedule(problems, cfg, regen ? store.state.progress : undefined)
-      store.setConfig(cfg)
+      const { assignments, warnings, extendedDeadline } = generateSchedule(problems, cfg, regen ? store.state.progress : undefined)
+      const effectiveConfig = extendedDeadline ? { ...cfg, deadline: extendedDeadline } : cfg
+      if (extendedDeadline) setDeadline(extendedDeadline)
+      store.setConfig(effectiveConfig)
       store.applyAssignments(assignments, new Date().toISOString())
       if (warnings.length) setWarn(warnings)
       else toast.success(regen ? 'Schedule regenerated' : 'Schedule generated')
@@ -91,7 +96,7 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
           </div>
           <div className="flex items-center gap-2">
             <Switch id="weekdays" checked={weekdays} onCheckedChange={setWeekdays} />
-            <Label htmlFor="weekdays">Weekdays only (for requeue)</Label>
+            <Label htmlFor="weekdays">Schedule new problems on weekdays only</Label>
           </div>
           <div className="grid gap-1.5">
             <Label htmlFor="reviewsPerDay">Reviews per weekend day</Label>
