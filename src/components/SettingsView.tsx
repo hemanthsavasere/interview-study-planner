@@ -10,6 +10,7 @@ import { toast } from 'sonner'
 import { generateSchedule } from '../lib/scheduler'
 import { todayISO } from '../lib/date'
 import { syncToFiles, loadFromFiles } from '../lib/sync'
+import { DEFAULT_REVIEWS_PER_DAY } from '../lib/requeue'
 import type { Problem, AppState } from '../types'
 
 export function SettingsView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
@@ -17,6 +18,7 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
   const [startDate, setStartDate] = useState(store.state.config.startDate || todayISO())
   const [hours, setHours] = useState(String(store.state.config.hoursPerDay))
   const [weekdays, setWeekdays] = useState(store.state.config.weekdaysOnly)
+  const [reviewsPerDay, setReviewsPerDay] = useState(String(store.state.config.reviewsPerDay ?? DEFAULT_REVIEWS_PER_DAY))
   const [err, setErr] = useState('')
   const [warn, setWarn] = useState<string[] | null>(null)
   const [importedData, setImportedData] = useState<AppState | null>(null)
@@ -30,7 +32,9 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
       const h = Number(hours)
       if (!isFinite(h) || h < 0.5) { setErr('Hours must be at least 0.5'); return }
       if (!deadline) { setErr('Please set a deadline'); return }
-      const cfg = { deadline, startDate, hoursPerDay: h, weekdaysOnly: weekdays }
+      const reviewsPerDayValue = Number(reviewsPerDay)
+      if (!Number.isInteger(reviewsPerDayValue) || reviewsPerDayValue < 1) { setErr('Reviews per day must be a whole number of at least 1'); return }
+      const cfg = { deadline, startDate, hoursPerDay: h, weekdaysOnly: weekdays, reviewsPerDay: reviewsPerDayValue }
       const { assignments, warnings } = generateSchedule(problems, cfg, regen ? store.state.progress : undefined)
       store.setConfig(cfg)
       store.applyAssignments(assignments, new Date().toISOString())
@@ -88,6 +92,10 @@ export function SettingsView({ problems, store }: { problems: Problem[]; store: 
           <div className="flex items-center gap-2">
             <Switch id="weekdays" checked={weekdays} onCheckedChange={setWeekdays} />
             <Label htmlFor="weekdays">Weekdays only (for requeue)</Label>
+          </div>
+          <div className="grid gap-1.5">
+            <Label htmlFor="reviewsPerDay">Reviews per weekend day</Label>
+            <Input id="reviewsPerDay" type="number" min={1} step={1} value={reviewsPerDay} onChange={e => setReviewsPerDay(e.target.value)} />
           </div>
           {err && <p role="alert" className="text-sm text-destructive">{err}</p>}
         </CardContent>

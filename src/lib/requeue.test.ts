@@ -88,6 +88,63 @@ describe('requeue', () => {
   })
 })
 
+describe('processRequeue cap', () => {
+  // 2099-01-17 Sat, 18 Sun, 24 Sat, 25 Sun, 31 Sat
+  const today = '2099-01-19' // Monday
+
+  it('caps at default 5/day: 7 due -> 5 Sat + 2 Sun', () => {
+    const prog: Record<string, ProblemProgress> = {}
+    for (let i = 0; i < 7; i++) prog[`p${i}`] = solved(`p${i}`, '2099-01-12')
+    const r = processRequeue(prog, Object.keys(prog).map(prob), cfg, today)
+    const byDate: Record<string, number> = {}
+    for (const p of Object.values(r)) byDate[p.requeueDate!] = (byDate[p.requeueDate!] ?? 0) + 1
+    expect(byDate['2099-01-24']).toBe(5)
+    expect(byDate['2099-01-25']).toBe(2)
+  })
+
+  it('12 due -> 5 Sat + 5 Sun + 2 next Sat', () => {
+    const prog: Record<string, ProblemProgress> = {}
+    for (let i = 0; i < 12; i++) prog[`p${i}`] = solved(`p${i}`, '2099-01-12')
+    const r = processRequeue(prog, Object.keys(prog).map(prob), cfg, today)
+    const byDate: Record<string, number> = {}
+    for (const p of Object.values(r)) byDate[p.requeueDate!] = (byDate[p.requeueDate!] ?? 0) + 1
+    expect(byDate['2099-01-24']).toBe(5)
+    expect(byDate['2099-01-25']).toBe(5)
+    expect(byDate['2099-01-31']).toBe(2)
+  })
+
+  it('respects config.reviewsPerDay', () => {
+    const cfg2: ScheduleConfig = { ...cfg, reviewsPerDay: 2 }
+    const prog: Record<string, ProblemProgress> = {}
+    for (let i = 0; i < 5; i++) prog[`p${i}`] = solved(`p${i}`, '2099-01-12')
+    const r = processRequeue(prog, Object.keys(prog).map(prob), cfg2, today)
+    const byDate: Record<string, number> = {}
+    for (const p of Object.values(r)) byDate[p.requeueDate!] = (byDate[p.requeueDate!] ?? 0) + 1
+    expect(byDate['2099-01-24']).toBe(2)
+    expect(byDate['2099-01-25']).toBe(2)
+    expect(byDate['2099-01-31']).toBe(1)
+  })
+
+  it('rebalances pre-existing future assignments toward the cap, without incrementing requeueCount', () => {
+    const prog: Record<string, ProblemProgress> = {}
+    // 5 problems already scheduled on 2099-01-24 (older lastUpdated -> keep Sat slots)
+    for (let i = 0; i < 5; i++) {
+      prog[`s${i}`] = { ...solved(`s${i}`, '2099-01-05', '2099-01-24'), requeueCount: 3 }
+    }
+    // 2 newly due problems (later lastUpdated -> overflow to Sunday)
+    for (let i = 0; i < 2; i++) prog[`d${i}`] = solved(`d${i}`, '2099-01-18')
+    const r = processRequeue(prog, Object.keys(prog).map(prob), cfg, today)
+    for (let i = 0; i < 5; i++) {
+      expect(r[`s${i}`].requeueDate).toBe('2099-01-24')
+      expect(r[`s${i}`].requeueCount).toBe(3)
+    }
+    for (let i = 0; i < 2; i++) {
+      expect(r[`d${i}`].requeueDate).toBe('2099-01-25')
+      expect(r[`d${i}`].requeueCount).toBe(1)
+    }
+  })
+})
+
 describe('nextReviewDay', () => {
   it('Wednesday -> next Saturday', () => {
     expect(new Date('2099-01-14T12:00:00').getDay()).toBe(3)
