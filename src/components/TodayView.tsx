@@ -7,6 +7,7 @@ import { Badge } from './ui/badge'
 import { ProblemCard } from './ProblemCard'
 import type { Problem, Status } from '../types'
 import { todayISO, addDaysISO } from '../lib/date'
+import { isActiveAssignment } from '../lib/assignments'
 
 export function TodayView({ problems, store }: { problems: Problem[]; store: ReturnType<typeof import('../hooks/useStore').useStore> }) {
   const realToday = todayISO()
@@ -23,7 +24,9 @@ export function TodayView({ problems, store }: { problems: Problem[]; store: Ret
   }
 
   const byId = new Map(problems.map(p => [p.id, p]))
-  const scheduled = Object.values(store.state.progress).filter(p => p.scheduledDate === selectedDate)
+  const scheduled = Object.values(store.state.progress).filter(
+    p => p.scheduledDate === selectedDate && isActiveAssignment(p),
+  )
 
   const solved = Object.values(store.state.progress).filter(p => p.status === 'solved' || p.status === 'confident').length
   const pct = problems.length ? (solved / problems.length) * 100 : 0

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import type { AppState, Problem, ProblemProgress, ScheduleConfig } from '../types'
 import { loadState, saveState, freshState } from '../lib/storage'
 import { processRequeue } from '../lib/requeue'
+import { applyAssignments as mergeAssignments } from '../lib/assignments'
 
 import { todayISO } from '../lib/date'
 
@@ -27,21 +28,14 @@ export function useStore(problems: Problem[]) {
   }, [problems])
 
   const setConfig = useCallback((config: ScheduleConfig) => {
-    setState(s => ({ ...s, config }))
-  }, [])
+    setState(s => {
+      const next = { ...s, config }
+      return { ...next, progress: processRequeue(next.progress, problems, next.config, todayISO()) }
+    })
+  }, [problems])
 
   const applyAssignments = useCallback((assignments: Record<string, string>, generatedAt: string) => {
-    setState(s => {
-      const progress = { ...s.progress }
-      for (const [id, date] of Object.entries(assignments)) {
-        progress[id] = {
-          problemId: id, status: 'not-started', notes: '',
-          lastUpdated: new Date().toISOString(), scheduledDate: date, requeueCount: 0,
-          ...s.progress[id],
-        }
-      }
-      return { ...s, progress, generatedAt }
-    })
+    setState(s => ({ ...s, ...mergeAssignments(s.progress, assignments, generatedAt) }))
   }, [])
 
   const resetAll = useCallback(() => setState(freshState()), [])

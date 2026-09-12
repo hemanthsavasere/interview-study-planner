@@ -1,6 +1,17 @@
 import type { Problem, ScheduleConfig, ProblemProgress, Difficulty } from '../types'
 import { addDaysISO, todayISO } from './date'
 
+function isWeekend(date: string): boolean {
+  const day = new Date(`${date}T12:00:00`).getDay()
+  return day === 0 || day === 6
+}
+
+function nextWeekday(date: string): string {
+  let next = date
+  while (isWeekend(next)) next = addDaysISO(next, 1)
+  return next
+}
+
 export const DIFFICULTY_MINUTES: Record<Difficulty, number> = {
   Fundamental: 24, Easy: 30, Medium: 48, Hard: 69,
 }
@@ -11,6 +22,7 @@ export function totalStudyMinutes(problems: Problem[]): number {
 export interface ScheduleResult {
   assignments: Record<string, string>
   warnings: string[]
+  extendedDeadline?: string
 }
 
 export function generateSchedule(
@@ -28,7 +40,6 @@ export function generateSchedule(
   if (config.hoursPerDay < 0.5) throw new Error('hoursPerDay must be at least 0.5')
 
   const dayBudget = config.hoursPerDay * 60
-  const days = Math.floor((deadline.getTime() - start.getTime()) / 86400000) + 1
 
   const warnings: string[] = []
   const solvedOrConfident = new Set(
@@ -38,11 +49,6 @@ export function generateSchedule(
   )
   const toSchedule = problems.filter(p => !solvedOrConfident.has(p.id))
 
-  const totalMin = totalStudyMinutes(toSchedule)
-  if (totalMin > days * dayBudget) {
-    warnings.push(`Not enough time: ${totalMin} min needed, ${days * dayBudget} min available`)
-  }
-
   const problemIds = new Set(problems.map(p => p.id))
   const assignments: Record<string, string> = {}
   if (existingProgress) {
@@ -51,13 +57,37 @@ export function generateSchedule(
     }
   }
 
-  let dayIdx = 0
+  let currentDate = config.weekdaysOnly ? nextWeekday(startISO) : startISO
+  let requiredDays = 0
   let used = 0
   for (const p of toSchedule) {
     const m = DIFFICULTY_MINUTES[p.difficulty]
-    if (used + m > dayBudget && dayIdx + 1 < days) { dayIdx++; used = 0 }
-    assignments[p.id] = addDaysISO(startISO, dayIdx)
+    const startsNewDay = requiredDays === 0 || (used > 0 && used + m > dayBudget)
+    if (startsNewDay) {
+      if (requiredDays > 0) {
+        currentDate = addDaysISO(currentDate, 1)
+        if (config.weekdaysOnly) currentDate = nextWeekday(currentDate)
+      }
+      requiredDays++
+      used = 0
+    }
+    assignments[p.id] = currentDate
     used += m
   }
-  return { assignments, warnings }
+
+  const finalAssignmentDate = toSchedule.length > 0
+    ? assignments[toSchedule[toSchedule.length - 1].id]
+    : undefined
+  const extendedDeadline = finalAssignmentDate && finalAssignmentDate > config.deadline
+    ? finalAssignmentDate
+    : undefined
+  if (extendedDeadline) {
+    warnings.push(
+      `Schedule extended from ${config.deadline} to ${extendedDeadline} because the problems require ${requiredDays} days at ${config.hoursPerDay} hours/day.`,
+    )
+  }
+
+  return extendedDeadline
+    ? { assignments, warnings, extendedDeadline }
+    : { assignments, warnings }
 }

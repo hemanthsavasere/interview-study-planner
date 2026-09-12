@@ -9,6 +9,10 @@ const mk = (n: string, d: Problem['difficulty']): Problem => ({
 const cfg = (deadline: string, hoursPerDay = 2, startDate = '2099-01-01'): ScheduleConfig => ({
   deadline, hoursPerDay, weekdaysOnly: false, startDate,
 })
+const weekdayCfg = (deadline: string, hoursPerDay = 2, startDate = '2099-01-01'): ScheduleConfig => ({
+  deadline, hoursPerDay, weekdaysOnly: true, startDate,
+})
+const isWeekend = (iso: string): boolean => [0, 6].includes(new Date(`${iso}T12:00:00`).getDay())
 
 describe('scheduler', () => {
   it('weights: F=24 E=30 M=48 H=69', () => {
@@ -39,6 +43,25 @@ describe('scheduler', () => {
     const { assignments } = generateSchedule(probs, cfg('2099-01-31', 0.5))
     expect(assignments.h <= assignments.e).toBe(true)
   })
+  it('moves a weekend start to the next weekday when weekdays-only is enabled', () => {
+    const { assignments } = generateSchedule([mk('a', 'Easy')], weekdayCfg('2099-01-31', 2, '2099-01-03'))
+    expect(assignments.a).toBe('2099-01-05')
+  })
+  it('skips the weekend when a packed day rolls over from Friday', () => {
+    const probs = [mk('a', 'Hard'), mk('b', 'Easy')]
+    const { assignments } = generateSchedule(probs, weekdayCfg('2099-01-31', 1.5, '2099-01-02'))
+    expect(assignments).toEqual({ a: '2099-01-02', b: '2099-01-05' })
+  })
+  it('never assigns new problems to weekends when weekdays-only is enabled', () => {
+    const probs = Array.from({ length: 10 }, (_, i) => mk('p' + i, 'Medium'))
+    const { assignments } = generateSchedule(probs, weekdayCfg('2099-01-31', 1.5))
+    expect(Object.values(assignments).every(date => !isWeekend(date))).toBe(true)
+  })
+  it('keeps weekend dates available when weekdays-only is disabled', () => {
+    const probs = [mk('a', 'Hard'), mk('b', 'Easy')]
+    const { assignments } = generateSchedule(probs, cfg('2099-01-31', 1.5, '2099-01-02'))
+    expect(assignments).toEqual({ a: '2099-01-02', b: '2099-01-03' })
+  })
   it('throws when startDate is before today', () => {
     const yesterday = todayISO()
     const past = new Date(yesterday + 'T00:00:00'); past.setDate(past.getDate() - 1)
@@ -63,8 +86,67 @@ describe('scheduler', () => {
   })
   it('warns when over capacity', () => {
     const probs = Array.from({ length: 100 }, (_, i) => mk('p' + i, 'Hard'))
-    const { warnings } = generateSchedule(probs, cfg('2099-01-10', 2))
+    const { warnings, extendedDeadline } = generateSchedule(probs, cfg('2099-01-10', 2))
     expect(warnings.length).toBeGreaterThan(0)
+    expect(extendedDeadline).toBeTruthy()
+  })
+  it('extends the deadline when whole-problem packing needs another day', () => {
+    const probs = [mk('a', 'Medium'), mk('b', 'Medium'), mk('c', 'Medium')]
+    const { assignments, warnings, extendedDeadline } = generateSchedule(probs, cfg('2099-01-02', 1.5))
+
+    expect(assignments).toEqual({ a: '2099-01-01', b: '2099-01-02', c: '2099-01-03' })
+    expect(extendedDeadline).toBe('2099-01-03')
+    expect(warnings).toEqual([
+      'Schedule extended from 2099-01-02 to 2099-01-03 because the problems require 3 days at 1.5 hours/day.',
+    ])
+  })
+  it('does not extend a deadline when the packed schedule fits', () => {
+    const probs = [mk('a', 'Medium'), mk('b', 'Medium')]
+    const result = generateSchedule(probs, cfg('2099-01-02', 1.5))
+
+    expect(result.extendedDeadline).toBeUndefined()
+    expect(result.warnings).toEqual([])
+  })
+  it('calculates extensions from unsolved and attempted problems during regeneration', () => {
+    const probs = [mk('solved', 'Hard'), mk('attempted', 'Medium'), mk('unsolved', 'Medium'), mk('unsolved-2', 'Medium')]
+    const existing: Record<string, ProblemProgress> = {
+      solved: { problemId: 'solved', status: 'solved', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2098-01-01', requeueCount: 0 },
+      attempted: { problemId: 'attempted', status: 'attempted', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2098-01-02', requeueCount: 0 },
+      unsolved: { problemId: 'unsolved', status: 'not-started', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2098-01-03', requeueCount: 0 },
+      'unsolved-2': { problemId: 'unsolved-2', status: 'not-started', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2098-01-04', requeueCount: 0 },
+    }
+
+    const result = generateSchedule(probs, cfg('2099-01-02', 1.5), existing)
+
+    expect(result.assignments.solved).toBe('2098-01-01')
+    expect(result.assignments.attempted).toBe('2099-01-01')
+    expect(result.assignments.unsolved).toBe('2099-01-02')
+    expect(result.assignments['unsolved-2']).toBe('2099-01-03')
+    expect(result.extendedDeadline).toBe('2099-01-03')
+    expect(result.warnings).toEqual([
+      'Schedule extended from 2099-01-02 to 2099-01-03 because the problems require 3 days at 1.5 hours/day.',
+    ])
+  })
+  it('extends a weekday-only schedule past a weekend with study-day counts', () => {
+    const probs = [mk('a', 'Hard'), mk('b', 'Hard'), mk('c', 'Hard')]
+    const result = generateSchedule(probs, weekdayCfg('2099-01-05', 1.5, '2099-01-02'))
+
+    expect(result.assignments).toEqual({ a: '2099-01-02', b: '2099-01-05', c: '2099-01-06' })
+    expect(result.extendedDeadline).toBe('2099-01-06')
+    expect(result.warnings).toEqual([
+      'Schedule extended from 2099-01-05 to 2099-01-06 because the problems require 3 days at 1.5 hours/day.',
+    ])
+  })
+  it('preserves solved weekend history while rescheduling active problems on weekdays', () => {
+    const probs = [mk('solved', 'Easy'), mk('active', 'Easy')]
+    const existing: Record<string, ProblemProgress> = {
+      solved: { problemId: 'solved', status: 'solved', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2099-01-04', requeueCount: 0 },
+      active: { problemId: 'active', status: 'attempted', notes: '', lastUpdated: '2099-01-01', scheduledDate: '2099-01-02', requeueCount: 0 },
+    }
+    const { assignments } = generateSchedule(probs, weekdayCfg('2099-01-31', 2, '2099-01-03'), existing)
+
+    expect(assignments.solved).toBe('2099-01-04')
+    expect(assignments.active).toBe('2099-01-05')
   })
   it('regeneration preserves solved, reschedules unsolved from startDate', () => {
     const probs = [mk('a', 'Easy'), mk('b', 'Easy')]

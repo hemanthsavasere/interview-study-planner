@@ -1,11 +1,12 @@
 import type { AppState } from '../types'
+import { DEFAULT_REVIEWS_PER_DAY } from './requeue'
 export const SCHEMA_VERSION = 1
 const KEY = 'isp-state'
 
 export function freshState(): AppState {
   return {
     schemaVersion: SCHEMA_VERSION,
-    config: { deadline: '', hoursPerDay: 2, weekdaysOnly: true, startDate: '' },
+    config: { deadline: '', hoursPerDay: 2, weekdaysOnly: true, startDate: '', reviewsPerDay: DEFAULT_REVIEWS_PER_DAY },
     progress: {}, generatedAt: '',
   }
 }
